@@ -25,7 +25,7 @@ const locationDatas = [
       {
         id: 2,
         name: 'Jakarta',
-        image: '/src/assets/images/jakarta.png',
+        image: '../../assets/images/jakarta.png',
         flag: '/src/assets/images/flag.png',
         layout: 'small',
         details: [

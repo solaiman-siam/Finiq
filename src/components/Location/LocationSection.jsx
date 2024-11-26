@@ -6,12 +6,12 @@ const locationDatas = [
   {
     id: 1,
     continent: 'South-East Asia',
-    continentLogo: '/src/assets/images/southasia.png',
+    continentLogo: '/southasia.png',
     destinations: [
       {
         id: 1,
         name: 'Singapore',
-        image: '../../assets/images/destination image big.png',
+        image: '/src/assets/images/destination image big.png',
         flag: '/src/assets/images/flag.png',
         layout: 'big',
         details: [
@@ -25,7 +25,7 @@ const locationDatas = [
       {
         id: 2,
         name: 'Jakarta',
-        image: '../../assets/images/jakarta.png',
+        image: '/jakarta.png',
         flag: '/src/assets/images/flag.png',
         layout: 'small',
         details: [

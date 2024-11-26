@@ -11,7 +11,7 @@ const locationDatas = [
       {
         id: 1,
         name: 'Singapore',
-        image: '/src/assets/images/destination image big.png',
+        image: '../../assets/images/destination image big.png',
         flag: '/src/assets/images/flag.png',
         layout: 'big',
         details: [

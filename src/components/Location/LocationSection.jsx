@@ -11,8 +11,8 @@ const locationDatas = [
       {
         id: 1,
         name: 'Singapore',
-        image: '/src/assets/images/destination image big.png',
-        flag: '/src/assets/images/flag.png',
+        image: '/destination image big.png',
+        flag: '/flag.png',
         layout: 'big',
         details: [
           {
@@ -26,7 +26,7 @@ const locationDatas = [
         id: 2,
         name: 'Jakarta',
         image: '/jakarta.png',
-        flag: '/src/assets/images/flag.png',
+        flag: '/flag.png',
         layout: 'small',
         details: [
           {
@@ -39,8 +39,8 @@ const locationDatas = [
       {
         id: 3,
         name: 'Bangkok',
-        image: '/src/assets/images/bankock.png',
-        flag: '/src/assets/images/flag.png',
+        image: '/bankock.png',
+        flag: '/flag.png',
         layout: 'small',
         details: [
           {
@@ -53,8 +53,8 @@ const locationDatas = [
       {
         id: 4,
         name: 'Kuala Lumpur',
-        image: '/src/assets/images/kualalampur.png',
-        flag: '/src/assets/images/flag.png',
+        image: '/kualalampur.png',
+        flag: '/flag.png',
         layout: 'small',
         details: [
           {
@@ -69,13 +69,13 @@ const locationDatas = [
   {
     id: 2,
     continent: 'Asia Pacific',
-    continentLogo: '/src/assets/images/asia.png',
+    continentLogo: '/asia.png',
     destinations: [
       {
         id: 1,
         name: 'Hong Kong',
-        image: '/src/assets/images/hongkong.png',
-        flag: '/src/assets/images/flag.png',
+        image: '/hongkong.png',
+        flag: '/flag.png',
         layout: 'big',
         details: [
           {
@@ -88,8 +88,8 @@ const locationDatas = [
       {
         id: 2,
         name: 'Sydney',
-        image: '/src/assets/images/sydney.png',
-        flag: '/src/assets/images/flag.png',
+        image: '/sydney.png',
+        flag: '/flag.png',
         layout: 'small',
         details: [
           {
@@ -102,8 +102,8 @@ const locationDatas = [
       {
         id: 3,
         name: 'Taipei',
-        image: '/src/assets/images/taipei.png',
-        flag: '/src/assets/images/flag.png',
+        image: '/taipei.png',
+        flag: '/flag.png',
         layout: 'small',
         details: [
           {
@@ -116,8 +116,8 @@ const locationDatas = [
       {
         id: 4,
         name: 'Tokyo',
-        image: '/src/assets/images/tokyo.png',
-        flag: '/src/assets/images/flag.png',
+        image: '/tokyo.png',
+        flag: '/flag.png',
         layout: 'small',
         details: [
           {
@@ -132,13 +132,13 @@ const locationDatas = [
   {
     id: 3,
     continent: 'Middle-East',
-    continentLogo: '/src/assets/images/middleeast.png',
+    continentLogo: '/middleeast.png',
     destinations: [
       {
         id: 1,
         name: 'Dubai',
-        image: '/src/assets/images/dubai.png',
-        flag: '/src/assets/images/flag.png',
+        image: '/dubai.png',
+        flag: '/flag.png',
         layout: 'big',
         details: [
           {
@@ -153,13 +153,13 @@ const locationDatas = [
   {
     id: 4,
     continent: 'Europe',
-    continentLogo: '/src/assets/images/europe.png',
+    continentLogo: '/europe.png',
     destinations: [
       {
         id: 1,
         name: 'London',
-        image: '/src/assets/images/london.png',
-        flag: '/src/assets/images/flag.png',
+        image: '/london.png',
+        flag: '/flag.png',
         layout: 'big',
         details: [
           {
@@ -172,8 +172,8 @@ const locationDatas = [
       {
         id: 2,
         name: 'Madird',
-        image: '/src/assets/images/jakarta.png',
-        flag: '/src/assets/images/flag.png',
+        image: '/jakarta.png',
+        flag: '/flag.png',
         layout: 'small',
         details: [
           {
@@ -186,8 +186,8 @@ const locationDatas = [
       {
         id: 3,
         name: 'Zurich',
-        image: '/src/assets/images/bankock.png',
-        flag: '/src/assets/images/flag.png',
+        image: '/bankock.png',
+        flag: '/flag.png',
         layout: 'small',
         details: [
           {
@@ -200,8 +200,8 @@ const locationDatas = [
       {
         id: 4,
         name: 'Frankfurt',
-        image: '/src/assets/images/kualalampur.png',
-        flag: '/src/assets/images/flag.png',
+        image: '/kualalampur.png',
+        flag: '/flag.png',
         layout: 'small',
         details: [
           {
@@ -260,7 +260,7 @@ const LocationSection = () => {
 
       <div className="absolute top-0 left-0 w-full h-full z-[-1]">
         <img
-          src="/src/assets/images/waves-2.png"
+          src="/waves-2.png"
           alt=""
           className="w-full max-w-full rotate-180 object-cover"
         />

@@ -22,7 +22,7 @@ LGT Bank has been present in Asia since 1986 and today is one of the top ten pri
 FinIQ specialises in distribution and transaction processing of treasury and wealth management products. FinIQ’s unchallenged leadership is proven by its unmatched market share. The key to FinIQ’s success is in its ability to innovate continuously and deliver functionally rich productivity tools for Structuring, Pricing, Payoff design, Electronic liquidity, Order management, Suitability, Documentation, Collateral, Fixing, Settlement and Accounting for the entire order and trade life cycle.
 
 The FinIQ solution automates instruments ranging from traditional products such as FX spot, options, bonds, stocks, Funds, Insurance, IRS to more sophisticated products such as OTC accumulators, ELN, dual currency investments, target redemptions, and range accruals.`,
-    imgUrl: '/src/assets/images/showcase-img-1.png',
+    imgUrl: '/showcase-img-1.png',
   },
   {
     id: 2,
@@ -44,7 +44,7 @@ LGT Bank has been present in Asia since 1986 and today is one of the top ten pri
 FinIQ specialises in distribution and transaction processing of treasury and wealth management products. FinIQ’s unchallenged leadership is proven by its unmatched market share. The key to FinIQ’s success is in its ability to innovate continuously and deliver functionally rich productivity tools for Structuring, Pricing, Payoff design, Electronic liquidity, Order management, Suitability, Documentation, Collateral, Fixing, Settlement and Accounting for the entire order and trade life cycle.
 
 The FinIQ solution automates instruments ranging from traditional products such as FX spot, options, bonds, stocks, Funds, Insurance, IRS to more sophisticated products such as OTC accumulators, ELN, dual currency investments, target redemptions, and range accruals.`,
-    imgUrl: '/src/assets/images/showcase-img-2.png',
+    imgUrl: '/showcase-img-2.png',
   },
   {
     id: 3,
@@ -66,7 +66,7 @@ LGT Bank has been present in Asia since 1986 and today is one of the top ten pri
 FinIQ specialises in distribution and transaction processing of treasury and wealth management products. FinIQ’s unchallenged leadership is proven by its unmatched market share. The key to FinIQ’s success is in its ability to innovate continuously and deliver functionally rich productivity tools for Structuring, Pricing, Payoff design, Electronic liquidity, Order management, Suitability, Documentation, Collateral, Fixing, Settlement and Accounting for the entire order and trade life cycle.
 
 The FinIQ solution automates instruments ranging from traditional products such as FX spot, options, bonds, stocks, Funds, Insurance, IRS to more sophisticated products such as OTC accumulators, ELN, dual currency investments, target redemptions, and range accruals.`,
-    imgUrl: '/src/assets/images/showcase-img-3.png',
+    imgUrl: '/showcase-img-3.png',
   },
   {
     id: 4,
@@ -88,7 +88,7 @@ LGT Bank has been present in Asia since 1986 and today is one of the top ten pri
 FinIQ specialises in distribution and transaction processing of treasury and wealth management products. FinIQ’s unchallenged leadership is proven by its unmatched market share. The key to FinIQ’s success is in its ability to innovate continuously and deliver functionally rich productivity tools for Structuring, Pricing, Payoff design, Electronic liquidity, Order management, Suitability, Documentation, Collateral, Fixing, Settlement and Accounting for the entire order and trade life cycle.
 
 The FinIQ solution automates instruments ranging from traditional products such as FX spot, options, bonds, stocks, Funds, Insurance, IRS to more sophisticated products such as OTC accumulators, ELN, dual currency investments, target redemptions, and range accruals.`,
-    imgUrl: '/src/assets/images/showcase-img-4.png',
+    imgUrl: '/showcase-img-4.png',
   },
   {
     id: 5,
@@ -110,7 +110,7 @@ LGT Bank has been present in Asia since 1986 and today is one of the top ten pri
 FinIQ specialises in distribution and transaction processing of treasury and wealth management products. FinIQ’s unchallenged leadership is proven by its unmatched market share. The key to FinIQ’s success is in its ability to innovate continuously and deliver functionally rich productivity tools for Structuring, Pricing, Payoff design, Electronic liquidity, Order management, Suitability, Documentation, Collateral, Fixing, Settlement and Accounting for the entire order and trade life cycle.
 
 The FinIQ solution automates instruments ranging from traditional products such as FX spot, options, bonds, stocks, Funds, Insurance, IRS to more sophisticated products such as OTC accumulators, ELN, dual currency investments, target redemptions, and range accruals.`,
-    imgUrl: '/src/assets/images/showcase-img-5.png',
+    imgUrl: '/showcase-img-5.png',
   },
 ];
 
@@ -129,7 +129,7 @@ function ShowcaseSection() {
       </Container>
 
       <div className="absolute top-0 left-0 w-full max-w-full z-[-1]">
-        <img src="/src/assets/images/footer-logo.png" />
+        <img src="/footer-logo.png" />
       </div>
     </section>
   );

@@ -57,7 +57,7 @@ const NewsItem = ({ data }) => {
                         >
                           Read More
                           <img
-                            src="/src//assets/images/arrow.png"
+                            src="/arrow.png"
                             className="inline pl-9"
                           />
                         </Link>

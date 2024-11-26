@@ -32,7 +32,7 @@ const ShowcaseHalfItem = ({ data }) => {
           className="text-text-primary text-sm font-poppins capitalize pl-[32px] py-[5px] pr-2 border-2 border-[#F4AB83] rounded-[35px] inline-block"
         >
           Read More
-          <img src="/src//assets/images/arrow.png" className="inline pl-9" />
+          <img src="/arrow.png" className="inline pl-9" />
         </button>
       </div>
 

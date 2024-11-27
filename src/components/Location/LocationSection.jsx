@@ -17,7 +17,7 @@ const locationDatas = [
         details: [
           {
             location:
-              'FinIQ Consulting Pte. Ltd., Malaysia Branch Block-J-05-13A, Solaris Mont Kiara, No.2, Jalan Solaris, 50480 Kuala Lumpur, Malaysia',
+              'FinIQ Consulting Pte. Ltd., Malaysia and Branch Block-J-05-13A, Solaris Mont Kiara, No.2, Jalan Solaris, 50480 Kuala Lumpur, Malaysia',
             contact: '+603-6201-9733',
           },
         ],

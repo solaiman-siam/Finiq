@@ -217,10 +217,10 @@ const locationDatas = [
 
 const LocationSection = () => {
   return (
-    <section className="py-[100px] bg-bg-secondary relative z-[1]">
+    <section className="py-[50px] sm:py-[100px] bg-bg-secondary relative z-[1] px-5 xl:px-0">
       <Container>
         {/* section title  */}
-        <h3 className="text-[50px] font-bold capitalize text-text-primary mb-[30px]">
+        <h3 className="text-[30px] sm:text-[50px] font-bold capitalize text-text-primary mb-[30px]">
           Locations
         </h3>
 
@@ -242,7 +242,7 @@ const LocationSection = () => {
               </div>
 
               {/* Destination */}
-              <div className="flex flex-wrap gap-y-6 gap-x-6 w-full">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-y-6 gap-x-6 w-full">
                 {item.destinations.map((item) => (
                   <>
                     {item.layout == 'big' ? (

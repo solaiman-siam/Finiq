@@ -7,11 +7,11 @@ const NewsItem = ({ data }) => {
   return (
     <div>
       {/* News Timeline */}
-      <div className="flex mb-[15px]">
+      <div className="flex justify-center sm:justify-start mb-[15px]">
         {data.map((item) => (
           <h6
             onClick={() => setCurrentActiveYear(item.year)}
-            className={`text-black text-base capitalize px-4 ${
+            className={`text-black text-[13px] sm:text-base capitalize px-2 sm:px-4 ${
               item.year == currentActiveYear
                 ? 'opacity-100 font-bold'
                 : 'opacity-50 font-normal'
@@ -32,9 +32,9 @@ const NewsItem = ({ data }) => {
                 {item.newsItems.map((item) => (
                   <div
                     key={item.id}
-                    className="w-full px-9 py-6 bg-bg-secondary rounded-[10px] flex items-center"
+                    className="w-full px-5 sm:px-9 py-6 bg-bg-secondary rounded-[10px] flex flex-col sm:flex-row items-center"
                   >
-                    <div className="w-1/12 flex flex-col justify-center items-center relative after:absolute after:content-[''] after:w-[1px] after:h-full after:right-0 after:top-[50%] after:translate-y-[-50%] after:bg-bg-primary after:opacity-50">
+                    <div className="sm:w-2/12 md:w-2/12 lg:w-2/12 flex flex-col justify-center items-center relative after:absolute after:content-[''] after:w-[1px] after:h-full after:right-0 after:top-[50%] after:translate-y-[-50%] after:bg-bg-primary after:opacity-50 after:hidden sm:after:block w-full border-b-2 border-[#FFD3BB] mb-4 sm:mb-0 sm:border-b-0">
                       <h6 className="text-bg-primary text-lg font-bold font-pop capitalize">
                         {item.month}
                       </h6>
@@ -43,11 +43,11 @@ const NewsItem = ({ data }) => {
                       </h4>
                     </div>
 
-                    <div className="w-11/12 pl-[37px]">
-                      <h2 className="text-black text-[26px] font-bold mb-6 font-poppins">
+                    <div className="w-full sm:w-10/12 md:w-10/12 lg:w-10/12 sm:pl-[37px]">
+                      <h2 className="text-black text-lg sm:text-[26px] font-bold mb-3 sm:mb-6 font-poppins">
                         {item.headline}
                       </h2>
-                      <p className="text-text-primary text-base font-poppins leading-[150%]">
+                      <p className="text-text-primary text-sm sm:text-base font-poppins leading-[150%]">
                         {item.description}
                       </p>
                       <div className="mt-5">
@@ -56,10 +56,7 @@ const NewsItem = ({ data }) => {
                           className="text-text-primary text-sm font-poppins capitalize pl-[32px] py-[5px] pr-2 rounded-[35px] inline-block border-[2px] border-bg-primary"
                         >
                           Read More
-                          <img
-                            src="/arrow.png"
-                            className="inline pl-9"
-                          />
+                          <img src="/arrow.png" className="inline pl-9" />
                         </Link>
                       </div>
                     </div>
@@ -70,6 +67,9 @@ const NewsItem = ({ data }) => {
           </div>
         ))}
       </div>
+
+      {/* News Items Paginate */}
+      <div className="w-full"></div>
     </div>
   );
 };

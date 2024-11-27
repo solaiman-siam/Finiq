@@ -9,7 +9,7 @@ const ShowcaseHalfItem = ({ data }) => {
       <img
         src={data.imgUrl}
         alt="Showcase Item Image"
-        className="w-full h-[392px] max-w-full rounded-[10px]"
+        className="w-full h-[150px] sm:h-[392px] max-w-full rounded-[10px] object-cover"
       />
 
       <div>
@@ -21,7 +21,7 @@ const ShowcaseHalfItem = ({ data }) => {
           {data.info}
         </h5>
 
-        <p className="text-black text-sm font-poppins leading-[150%] mt-[10px] line-clamp-6">
+        <p className="text-black text-sm font-poppins leading-[150%] mt-[10px] line-clamp-6 h-0 sm:h-auto">
           {data.description}
         </p>
       </div>
@@ -37,14 +37,14 @@ const ShowcaseHalfItem = ({ data }) => {
       </div>
 
       {activeArticle && (
-        <div className="fixed top-0 left-0 w-full h-full flex justify-center items-end z-[9]">
+        <div className="fixed top-0 left-0 w-full h-full flex justify-center items-end z-[51]">
           <div
             onClick={() => setActiveArticle(false)}
             className="absolute top-0 left-0 w-full h-full bg-black/40 z-[-1]"
           ></div>
 
           {/* Transparent Background */}
-          <div className="absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] w-[60%] h-[80%] flex justify-center items-center rounded-[10px] overflow-y-scroll no-scrollbar bg-white">
+          <div className="absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] w-[90%] sm:w-[60%] h-[90%] sm:h-[80%] flex justify-center items-center rounded-[10px] overflow-y-scroll no-scrollbar bg-white">
             {/* Background Click Closer */}
             <div
               onClick={() => setActiveArticle(false)}
@@ -71,8 +71,6 @@ const ShowcaseHalfItem = ({ data }) => {
                 </h5>
 
                 <pre className="text-black text-sm font-poppins leading-[150%] mt-[10px] overflow-auto whitespace-pre-wrap">
-                  {data.description}
-                  {data.description}
                   {data.description}
                   {data.description}
                 </pre>

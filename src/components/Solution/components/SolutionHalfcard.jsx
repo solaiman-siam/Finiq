@@ -2,29 +2,29 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from '@/components/ui/accordion';
 
 function SolutionHalfcard({ data }) {
   return (
     <div
       className={`solution-card-wrap  ${
-        data.layout === "full" ? "w-full" : "w-1/2"
+        data.layout === 'full' ? 'w-full' : 'w-full sm:w-1/2'
       }`}
     >
       <div className="bg-white p-2 rounded-[10px] mt-6 min-h-[547px]">
         <AccordionItem value={`item-${data.id}`}>
-          <AccordionTrigger>
+          <AccordionTrigger className="w-full">
             <div className="w-full text-left">
               <img
-                className="object-cover h-[310px] w-full rounded-[10px] "
+                className="object-cover h-[310px] w-full rounded-[10px]"
                 src={data.imgUrl}
                 alt={data.title}
               />
               <div className="mt-5 px-5">
-                <p className="text-[12px] w-[473px] font-bold leading-[18px] text-black no-underline">
+                <p className="text-[12px] max-w-[473px] font-bold leading-[18px] text-black no-underline">
                   {data.topTitle}
                 </p>
-                <h3 className="text-[28px] w-[500px] font-bold text-bg-primary mt-[6px] mb-[10px]">
+                <h3 className="text-[22px] sm:text-[28px] max-w-[500px] font-bold text-bg-primary mt-[6px] mb-[10px]">
                   {data.title}
                 </h3>
                 <p className="text-sm font-medium italic text-paraColor">

@@ -116,11 +116,11 @@ The FinIQ solution automates instruments ranging from traditional products such 
 
 function ShowcaseSection() {
   return (
-    <section className="pt-[70px] pb-[100px] z-[1]">
+    <section className="pt-[70px] pb-[50px] sm:pb-[100px] z-[1]">
       <Container>
         {/* section title  */}
         <div className="mb-[30px]">
-          <h3 className="text-[50px] font-bold capitalize text-text-primary">
+          <h3 className="text-[32px] sm:text-[50px] font-bold capitalize text-text-primary">
             Showcase
           </h3>
         </div>

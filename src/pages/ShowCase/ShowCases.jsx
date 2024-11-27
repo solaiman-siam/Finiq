@@ -6,7 +6,7 @@ import ShowcaseSection from '@/components/Showcase/ShowcaseSection';
 function ShowCases() {
   return (
     <div>
-      <div className="bg-bg-secondary">
+      <div className="bg-bg-secondary pt-[60px] sm:pt-[100px] px-5 xl:px-0">
         <ShowcaseSection />
       </div>
       <div>

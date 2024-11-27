@@ -1,29 +1,75 @@
-import { Link, NavLink } from "react-router-dom";
-import Container from "../../components/Container";
+import { useState } from 'react';
+import { HiBars3BottomRight, HiMiniXMark } from 'react-icons/hi2';
+import { Link, NavLink } from 'react-router-dom';
+import Container from '../../components/Container';
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div>
+    <div className="absolute top-0 left-0 w-full mx-auto z-50">
       <Container>
-        <div className="flex items-top border-b border-[#DCDCDC]  justify-between ">
+        <div className="flex items-center mx-5 mx:px-0 lg:items-top border-b border-[#DCDCDC] justify-between">
           <div className="py-6">
-            <img className="w-40 " src="/logo.png" alt="" />
+            <img className="w-[100px] lg:w-40" src="/logo.png" alt="" />
           </div>
-          <div className="flex items-top gap-14 h-full">
-            <div className="flex items-top gap-2 h-full text-text-primary">
-              <NavLink to={'/'} className={({isActive}) => isActive ? 'border-t-4 text-bg-primary border-bg-primary' : 'border-t-4 text-bg-white border-white'}>
-                <h4 className="px-4 py-10  h-full">Home</h4>
+
+          <div
+            onClick={() => setIsOpen(!isOpen)}
+            className="lg:hidden cursor-pointer"
+          >
+            {isOpen ? (
+              <HiMiniXMark className="text-[30px]" />
+            ) : (
+              <HiBars3BottomRight className="text-[30px]" />
+            )}
+          </div>
+
+          <div
+            className={`flex flex-col lg:flex-row items-top lg:gap-14 lg:h-full absolute top-[100%] w-full h-auto pt-[30px] px-5 bg-white lg:static lg:w-auto lg:py-0 lg:bg-transparent lg:px-0 duration-300 ${
+              isOpen ? 'left-0' : '-left-[100%]'
+            }`}
+          >
+            <div className="flex flex-col lg:flex-row items-top gap-y-6 lg:gap-2 lg:h-full text-text-primary">
+              <NavLink
+                to={'/'}
+                onClick={() => setIsOpen(false)}
+                className={({ isActive }) =>
+                  isActive
+                    ? 'text-bg-primary lg:border-t-4 lg:text-bg-primary lg:border-bg-primary'
+                    : 'lg:border-t-4 lg:text-bg-white lg:border-transparent'
+                }
+              >
+                <h4 className="px-4 lg:py-10  h-full">Home</h4>
               </NavLink>
-              <NavLink to={'/solutions'} className={({isActive}) => isActive ? 'border-t-4 text-bg-primary border-bg-primary' : 'border-t-4 text-bg-white border-white'}>
-                <h4 className="px-4 py-10   h-full">Sollutions</h4>
+              <NavLink
+                to={'/solutions'}
+                onClick={() => setIsOpen(false)}
+                className={({ isActive }) =>
+                  isActive
+                    ? 'text-bg-primary lg:border-t-4 lg:text-bg-primary lg:border-bg-primary'
+                    : 'lg:border-t-4 lg:text-bg-white lg:border-transparent'
+                }
+              >
+                <h4 className="px-4 lg:py-10   h-full">Solutions</h4>
               </NavLink>
-              <NavLink to={'/showcases'} className={({isActive}) => isActive ? 'border-t-4 text-bg-primary border-bg-primary' : 'border-t-4 text-bg-white border-white'}>
-                <h4 className="px-4 py-10   h-full">Showcase</h4>
+              <NavLink
+                to={'/showcases'}
+                onClick={() => setIsOpen(false)}
+                className={({ isActive }) =>
+                  isActive
+                    ? 'text-bg-primary lg:border-t-4 lg:text-bg-primary lg:border-bg-primary'
+                    : 'lg:border-t-4 lg:text-bg-white lg:border-transparent'
+                }
+              >
+                <h4 className="px-4 lg:py-10 h-full">Showcase</h4>
               </NavLink>
             </div>
             <div>
-              <Link>
-                <h4 className="px-8 my-7 py-4 rounded-full common-gradient">Contact Us</h4>
+              <Link to={'/contact'} onClick={() => setIsOpen(false)}>
+                <h4 className="px-8 my-7 py-4 rounded-full common-gradient text-center text-sm lg:text-base font-bold">
+                  Contact Us
+                </h4>
               </Link>
             </div>
           </div>

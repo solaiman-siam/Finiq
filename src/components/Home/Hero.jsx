@@ -1,27 +1,35 @@
-import WavesImg from "../../assets/images/waves.png";
-import Container from "../Container";
+import { Link } from 'react-router-dom';
+import WavesImg from '../../assets/images/waves.png';
+import Container from '../Container';
 
 function Hero() {
   return (
-    <div className="relative overflow-hidden w-full h-[900px]">
+    <div className="relative overflow-hidden w-full pt-[134px] pb-[50px] md:h-[700px] lg:h-[900px] px-5 xl:px-0">
       <img
-        className="absolute -top-20 bottom-0 right-0 z-2"
+        className="absolute top-20 lg:-top-20 bottom-0 right-0 z-[-1]"
         src={WavesImg}
         alt=""
       />
       <Container>
         <div className="w-full h-full flex justify-center flex-col ">
-          <h1 className="text-7xl text-text-primary font-bold w-8/12">
+          <h1 className="text-[36px] md:text-6xl lg:text-7xl text-text-primary font-bold xl:w-8/12 leading-[110%] md:leading-[130%] lg:leading-[140%]">
             Empowering Financial Institutions with Integrated Solutions
           </h1>
-          <p className="text-text-primary text-lg w-6/12 pt-6">
+          <p className="text-text-primary text-md md:text-lg md:w-6/12 pt-6">
             Streamlining structured products trading and wealth management
             through innovative modular software solutions
           </p>
 
-          <div className="flex pt-6   items-center gap-6">
-            <div className="flex cursor-pointer pl-8 pr-1 py-1 rounded-full items-center common-gradient gap-6">
-              <h4>Request a demo</h4>
+          <div className="flex flex-col sm:flex-row pt-6 items-center gap-[14px] md:gap-6">
+            <Link
+              to={'/contact'}
+              className="flex w-full md:w-auto pl-8 pr-1 py-1 rounded-full justify-between items-center common-gradient gap-6"
+            >
+              <div className="text-center w-[80%] md:w-auto md:text-left">
+                <h4 className="text-md md:text-base font-bold">
+                  Request a demo
+                </h4>
+              </div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="50"
@@ -37,9 +45,16 @@ function Hero() {
                   fill="#DA9169"
                 />
               </svg>
-            </div>
-            <div className="flex cursor-pointer border-bg-primary border-2 rounded-full pl-8 pr-1 py-[3px] items-center gap-8">
-              <h4 className="text-bg-primary font-semibold">Learn More</h4>
+            </Link>
+            <Link
+              to={'/solutions'}
+              className="flex w-full md:w-auto border-bg-primary border-2 rounded-full pl-8 pr-1 py-[3px] items-center gap-8"
+            >
+              <div className="text-center w-[80%] md:w-auto md:text-left">
+                <h4 className="text-md md:text-base text-bg-primary font-semibold">
+                  Learn More
+                </h4>
+              </div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="50"
@@ -55,7 +70,7 @@ function Hero() {
                   fill="white"
                 />
               </svg>
-            </div>
+            </Link>
           </div>
         </div>
       </Container>

@@ -2,9 +2,9 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import angleDown from "../../../assets/images/angle-down.svg"
-import { useState } from "react";
+} from '@/components/ui/accordion';
+import { useState } from 'react';
+import angleDown from '../../../assets/images/angle-down.svg';
 
 function SolutionFullcard({ data }) {
   const [isCollapsed, setIscollapsed] = useState(false);
@@ -12,28 +12,39 @@ function SolutionFullcard({ data }) {
   return (
     <div
       className={`solution-card-wrap mt-6 ${
-        data.layout === "full" ? "w-full" : "w-1/2"
+        data.layout === 'full' ? 'w-full' : 'w-1/2'
       }`}
     >
       <div className="card-full py-5 px-[30px] bg-white rounded-[10px]">
         <div>
           <AccordionItem value={`item-${data.id}`}>
-            <AccordionTrigger className={`text-left !flex items-center justify-between ${data.isReversed ? 'flex-row-reverse pl-[100px]' : 'pr-[100px]'}`} onClick={() => setIscollapsed(!isCollapsed)}>
-              <div className="w-[800px]">
+            <AccordionTrigger
+              className={`text-left !flex items-center justify-between ${
+                data.isReversed ? 'flex-row-reverse pl-[100px]' : 'pr-[100px]'
+              }`}
+              onClick={() => setIscollapsed(!isCollapsed)}
+            >
+              <div className="max-w-[800px] order-2 sm:order-1">
                 <p className="text-[12px] font-bold leading-[18px] text-black no-underline">
-                  {data.topTitle}
+                  {data.topTitle} ****somor
                 </p>
-                <h3 className="text-[28px] font-bold text-bg-primary mt-[6px] mb-[10px]">
+                <h3 className="text-[22px] sm:text-[28px] font-bold text-bg-primary mt-[6px] mb-[10px]">
                   {data.title}
                 </h3>
                 <p className="text-sm font-medium italic text-paraColor">
                   {data.description}
                 </p>
                 <div className="mt-5">
-                  <img className={`w-[18px] h-[12px] duration-200 ease-in-out ${isCollapsed ? 'rotate-[180deg]' : ''}`} src={angleDown} alt="angleDown" />
+                  <img
+                    className={`w-[18px] h-[12px] duration-200 ease-in-out ${
+                      isCollapsed ? 'rotate-[180deg]' : ''
+                    }`}
+                    src={angleDown}
+                    alt="angleDown"
+                  />
                 </div>
               </div>
-              <div>
+              <div className="order-1 sm:order-2">
                 <img
                   className="w-[207px] h-[170px] object-cover"
                   src={data.imgUrl}

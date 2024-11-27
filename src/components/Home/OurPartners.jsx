@@ -23,87 +23,87 @@ import Container from '../Container';
 
 function OurPartners() {
   return (
-    <div className="relative z-[1]">
+    <div className="relative z-[1] px-5 xl:px-0">
       <Container>
         <div className="py-24">
-          <h3 className="text-[50px] pb-10 font-bold  text-text-primary">
+          <h3 className="text-4xl sm:text-[50px] pb-10 sm:pb-16 md:pb-20 font-bold text-center sm:text-left text-text-primary">
             Our Partners
           </h3>
 
-          <div className="flex flex-wrap gap-14">
-            <div className=" h-14">
+          <div className="flex flex-wrap justify-center sm:justify-start gap-5 sm:gap-14">
+            <div className="h-5 lg:h-10 xl:h-14">
               <img className=" h-full object-contain" src={Icon21} alt="" />
             </div>
-            <div className=" h-14">
+            <div className="h-5 lg:h-10 xl:h-14">
               <img className=" h-full object-contain" src={Icon2} alt="" />
             </div>
-            <div className=" h-14">
+            <div className="h-5 lg:h-10 xl:h-14">
               <img className=" h-full object-contain" src={Icon3} alt="" />
             </div>
-            <div className=" h-14">
+            <div className="h-5 lg:h-10 xl:h-14">
               <img className=" h-full object-contain" src={Icon4} alt="" />
             </div>
-            <div className=" h-14">
+            <div className="h-5 lg:h-10 xl:h-14">
               <img
-                className=" h-full object-contain scale-[180%]"
+                className="h-5 sm:h-full object-contain scale-[180%]"
                 src={Icon12}
                 alt=""
               />
             </div>
-            <div className=" h-14">
+            <div className="h-5 lg:h-10 xl:h-14">
               <img className=" h-full object-contain" src={Icon5} alt="" />
             </div>
-            <div className=" h-14">
+            <div className="h-5 lg:h-10 xl:h-14">
               <img className=" h-full object-contain" src={Icon8} alt="" />
             </div>
-            <div className=" h-14">
+            <div className="h-5 lg:h-10 xl:h-14">
               <img className=" h-full object-contain" src={Icon6} alt="" />
             </div>
-            <div className=" h-14">
+            <div className="h-5 lg:h-10 xl:h-14">
               <img className=" h-full object-contain" src={Icon7} alt="" />
             </div>
-            <div className=" h-14">
+            <div className="h-5 lg:h-10 xl:h-14">
               <img className=" h-full object-contain" src={Icon8} alt="" />
             </div>
-            <div className=" h-14">
+            <div className="h-5 lg:h-10 xl:h-14">
               <img className=" h-full object-contain" src={Icon9} alt="" />
             </div>
-            <div className=" h-14">
+            <div className="h-5 lg:h-10 xl:h-14">
               <img className=" h-full object-contain" src={Icon10} alt="" />
             </div>
-            <div className=" h-14">
+            <div className="h-5 lg:h-10 xl:h-14">
               <img className=" h-full object-contain" src={Icon11} alt="" />
             </div>
 
-            <div className=" h-14">
+            <div className="h-5 lg:h-10 xl:h-14">
               <img className=" h-full object-contain" src={Icon13} alt="" />
             </div>
-            <div className=" h-14">
+            <div className="h-5 lg:h-10 xl:h-14">
               <img className=" h-full object-contain" src={Icon14} alt="" />
             </div>
-            <div className=" h-14">
+            <div className="h-5 lg:h-10 xl:h-14">
               <img className=" h-full object-contain" src={Icon15} alt="" />
             </div>
-            <div className=" h-14">
+            <div className="h-5 lg:h-10 xl:h-14">
               <img className=" h-full object-contain" src={Icon16} alt="" />
             </div>
-            <div className=" h-14">
+            <div className="h-5 lg:h-10 xl:h-14">
               <img className=" h-full object-contain" src={Icon17} alt="" />
             </div>
-            <div className=" h-14">
+            <div className="h-5 lg:h-10 xl:h-14">
               <img
-                className=" h-full object-contain scale-[180%]"
+                className="h-5 sm:h-full object-contain scale-[180%]"
                 src={Icon18}
                 alt=""
               />
             </div>
-            <div className=" h-14">
+            <div className="h-5 lg:h-10 xl:h-14">
               <img className=" h-full object-contain" src={Icon19} alt="" />
             </div>
-            <div className=" h-14">
+            <div className="h-5 lg:h-10 xl:h-14">
               <img className=" h-full object-contain" src={Icon20} alt="" />
             </div>
-            <div className=" h-14 ">
+            <div className="h-5 lg:h-10 xl:h-14 ">
               <img
                 className=" h-full scale-150 object-contain"
                 src={Icon1}

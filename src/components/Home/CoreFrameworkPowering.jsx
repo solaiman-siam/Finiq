@@ -1,14 +1,15 @@
-import Container from "../Container";
+import Container from '../Container';
 
 function CoreFrameworkPowering() {
   return (
-    <div className="w-full h-full bg-bg-secondary py-24">
+    <div className="w-full h-full bg-bg-secondary py-[50px] sm:py-[70px] md:py-24 px-5 xl:px-0">
       <Container>
         <div className="">
-          <h3 className="text-4xl text-center  font-bold text-text-primary">
+          <h3 className="text-[30px] sm:text-4xl text-center font-bold text-text-primary">
             The Core Frameworks <br></br> Powering FinIQ
           </h3>
-          <div className="grid grid-cols-3 gap-6 pt-8">
+
+          <div className="grid sm:grid-cols-3 gap-6 pt-8">
             <div>
               <div className="rounded-xl overflow-hidden h-[300px] ">
                 <img
@@ -83,19 +84,25 @@ function CoreFrameworkPowering() {
               </div>
             </div>
           </div>
-          <div className="flex items-center gap-6 p-4 divide-bg-secondary rounded-lg bg-white mt-14 divide-x">
-            <div className="flex flex-1 items-center flex-col gap-2">
-                <h2 className="text-4xl font-bold text-bg-primary">25</h2>
-                <h4 className="text-text-primary">Liguidity Providers</h4>
+
+          <div className="flex flex-col sm:flex-row items-center gap-6 p-4 divide-[#DCDCDC] divide-y-2 sm:divide-bg-secondary rounded-lg sm:bg-white mt-5 sm:mt-14 sm:divide-x sm:divide-y-0">
+            <div className="flex flex-1 items-center flex-col gap-2 pt-5 sm:pt-0">
+              <h2 className="text-4xl font-bold text-bg-primary text-center">
+                25
+              </h2>
+              <h4 className="text-text-primary">Liguidity Providers</h4>
             </div>
-            <div className="flex flex-1 items-center flex-col gap-2">
-                <h2 className="text-4xl font-bold text-bg-primary">225,000</h2>
-                <h4 className="text-text-primary">RFQs Daily</h4>
+            <div className="flex flex-1 items-center flex-col gap-2 pt-5 sm:pt-0">
+              <h2 className="text-4xl font-bold text-bg-primary text-center">
+                225,000
+              </h2>
+              <h4 className="text-text-primary">RFQs Daily</h4>
             </div>
-            <div className="flex flex-1 items-center flex-col gap-2">
-                <h2 className="text-4xl font-bold text-bg-primary">$100 Billion</h2>
-                <h4 className="text-text-primary">Traded
-                </h4>
+            <div className="flex flex-1 items-center flex-col gap-2 pt-5 sm:pt-0">
+              <h2 className="text-4xl font-bold text-bg-primary text-center">
+                $100 Billion
+              </h2>
+              <h4 className="text-text-primary">~100 Billion Traded</h4>
             </div>
           </div>
         </div>

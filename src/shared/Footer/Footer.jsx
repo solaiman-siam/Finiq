@@ -19,17 +19,21 @@ function Footer() {
                 </div>
                 <div className="flex items-center gap-6">
                   <Link
-                    to={'/'}
+                    to={
+                      'https://www.linkedin.com/company/finiq-consulting-pvt-ltd-/posts/?feedView=all'
+                    }
+                    target="_blank"
                     className="bg-[#251B16] text-white p-3 rounded-full"
                   >
                     <FaLinkedinIn size={22} />
                   </Link>
-                  <Link
-                    to={'/'}
+                  <a
+                    href="mailto:info@finiq.com"
+                    target="_blank"
                     className="bg-[#251B16] text-white p-3 rounded-full"
                   >
                     <TfiEmail size={20} />
-                  </Link>
+                  </a>
                 </div>
               </div>
               <div className="pt-2 w-7/12 sm:w-full flex justify-end sm:justify-start">
@@ -46,27 +50,27 @@ function Footer() {
                 <Link to={'/'}>
                   <h4 className="text-lg">Overview</h4>
                 </Link>
-                <Link to={'/'}>
+                <Link to="#coreFramework">
                   <h4 className="text-lg">Core Framework</h4>
                 </Link>
-                <Link to={'/'}>
+                <Link to={'#partners'}>
                   <h4 className="text-lg">Our Partners</h4>
                 </Link>
-                <Link to={'/'}>
+                <Link to={'#about'}>
                   <h4 className="text-lg">About Us</h4>
                 </Link>
               </div>
               <div className="text-white text-lg flex flex-col space-y-6">
-                <Link to={'/'}>
+                <Link to={'/showcases'}>
                   <h4>Showcase</h4>
                 </Link>
-                <Link to={'/'}>
+                <Link to={'/solutions'}>
                   <h4>Solutions</h4>
                 </Link>
-                <Link to={'/'}>
+                <Link to={'/showcases'}>
                   <h4>News</h4>
                 </Link>
-                <Link to={'/'}>
+                <Link to={'/showcases'}>
                   <h4>Locations</h4>
                 </Link>
               </div>

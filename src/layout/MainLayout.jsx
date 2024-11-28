@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, ScrollRestoration } from 'react-router-dom';
 import Footer from '../shared/Footer/Footer';
 import Navbar from '../shared/Navbar/Navbar';
 
@@ -8,7 +8,8 @@ function MainLayout() {
   };
 
   return (
-    <div className="font-poppins relative">
+    <div className="font-poppins relative scroll-smooth">
+      <ScrollRestoration></ScrollRestoration>
       <Navbar></Navbar>
       <Outlet></Outlet>
       <Footer></Footer>

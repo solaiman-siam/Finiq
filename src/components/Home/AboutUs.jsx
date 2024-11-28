@@ -2,7 +2,7 @@ import AboutImg from '../../assets/images/about.jpg';
 import Wave3 from '../../assets/images/wave3.png';
 function AboutUs() {
   return (
-    <div className="mt-10 xl:mt-0">
+    <div id="about" className="mt-10 xl:mt-0">
       <div className="flex relative">
         <div className="flex-1 relative overflow-hidden flex justify-center items-center pt-[300px] pb-[50px] xl:py-32 px-5 xl:px-0 bg-bg-secondary z-[1]">
           <div className="w-full absolute top-0 z-[10] h-24 bg-white hidden xl:block"></div>

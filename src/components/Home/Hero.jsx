@@ -4,7 +4,10 @@ import Container from '../Container';
 
 function Hero() {
   return (
-    <div className="relative overflow-hidden w-full pt-[134px] pb-[50px] md:h-[700px] lg:h-[900px] px-5 xl:px-0">
+    <div
+      id='heroSection'
+      className="relative overflow-hidden w-full pt-[134px] pb-[50px] md:h-[700px] lg:h-[900px] px-5 xl:px-0"
+    >
       <img
         className="absolute top-20 lg:-top-20 bottom-0 right-0 z-[-1]"
         src={WavesImg}

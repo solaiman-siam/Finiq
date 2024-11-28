@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const NewsItem = ({ data }) => {
-  const [currentActiveYear, setCurrentActiveYear] = useState(2018);
+  const [currentActiveYear, setCurrentActiveYear] = useState(2024);
 
   return (
     <div>
@@ -39,7 +39,7 @@ const NewsItem = ({ data }) => {
                         {item.month}
                       </h6>
                       <h4 className="text-bg-primary text-[52px] font-bold font-pop capitalize">
-                        {item.date}
+                        {item.year}
                       </h4>
                     </div>
 
@@ -47,18 +47,23 @@ const NewsItem = ({ data }) => {
                       <h2 className="text-black text-lg sm:text-[26px] font-bold mb-3 sm:mb-6 font-poppins">
                         {item.headline}
                       </h2>
-                      <p className="text-text-primary text-sm sm:text-base font-poppins leading-[150%]">
-                        {item.description}
-                      </p>
-                      <div className="mt-5">
-                        <Link
-                          to={'/'}
-                          className="text-text-primary text-sm font-poppins capitalize pl-[32px] py-[5px] pr-2 rounded-[35px] inline-block border-[2px] border-bg-primary"
-                        >
-                          Read More
-                          <img src="/arrow.png" className="inline pl-9" />
-                        </Link>
-                      </div>
+                      {item.description && (
+                        <p className="text-text-primary text-sm sm:text-base font-poppins leading-[150%]">
+                          {item.description}
+                        </p>
+                      )}
+                      {item.link && (
+                        <div className="mt-5">
+                          <Link
+                            to={item.link}
+                            target="_blank"
+                            className="text-text-primary text-sm font-poppins capitalize pl-[32px] py-[5px] pr-2 rounded-[35px] inline-block border-[2px] border-bg-primary"
+                          >
+                            Read More
+                            <img src="/arrow.png" className="inline pl-9" />
+                          </Link>
+                        </div>
+                      )}
                     </div>
                   </div>
                 ))}

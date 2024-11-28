@@ -63,24 +63,26 @@ const LocationSmallItem = ({ data }) => {
               </div>
             </div>
 
-            <div className="w-full flex gap-x-3">
-              <div className="w-[5%]">
-                <FaPhoneAlt
-                  className={`text-white text-xs sm:text-xl ${
-                    overlay ? 'visible' : 'invisible'
-                  }`}
-                />
+            {data.details[0].contact == '' ? null : (
+              <div className="w-full flex gap-x-3">
+                <div className="w-[5%]">
+                  <FaPhoneAlt
+                    className={`text-white text-xs sm:text-xl ${
+                      overlay ? 'visible' : 'invisible'
+                    }`}
+                  />
+                </div>
+                <div className="w-[95%]">
+                  <p
+                    className={`text-white text-xs sm:text-base leading-[150%] ${
+                      overlay ? 'visible' : 'invisible'
+                    }`}
+                  >
+                    {data.details[0].contact}
+                  </p>
+                </div>
               </div>
-              <div className="w-[95%]">
-                <p
-                  className={`text-white text-xs sm:text-base leading-[150%] ${
-                    overlay ? 'visible' : 'invisible'
-                  }`}
-                >
-                  {data.details[0].contact}
-                </p>
-              </div>
-            </div>
+            )}
           </div>
         </div>
       </div>

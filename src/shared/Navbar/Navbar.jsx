@@ -11,7 +11,9 @@ function Navbar() {
       <Container>
         <div className="flex items-center mx-5 mx:px-0 lg:items-top border-b border-[#DCDCDC] justify-between">
           <div className="py-6">
-            <img className="w-[100px] lg:w-40" src="/logo.png" alt="" />
+            <Link to={'/'}>
+              <img className="w-[100px] lg:w-40" src="/logo.png" alt="" />
+            </Link>
           </div>
 
           <div

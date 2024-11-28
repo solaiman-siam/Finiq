@@ -32,46 +32,50 @@ const ContactSection = () => {
           <div className="w-full lg:w-[60%] h-full bg-white p-[35px] lg:rounded-[10px]">
             {/* Type Selector */}
             <div className="w-full flex flex-wrap justify-between gap-y-3 items-center mb-10">
-              <div
+              <a
+                href="mailto:meeting@finiq.com"
                 onClick={() => setActive('demo')}
-                className={`w-[48%] sm:w-[28%] xl:w-auto px-[20px] py-[10px] border-2 border-bg-primary rounded-full text-xs lg:text-xs xl:text-base font-bold capitalize cursor-pointer hover:bg-bg-primary hover:text-white duration-300 ${
+                className={`w-[48%] sm:w-[28%] xl:w-auto px-[20px] py-[10px] border-2 border-bg-primary rounded-full text-xs lg:text-xs xl:text-[22px] font-bold capitalize cursor-pointer hover:bg-bg-primary hover:text-white duration-300 ${
                   active == 'demo'
                     ? 'bg-bg-primary text-white'
                     : 'bg-transparent text-bg-primary'
                 }`}
               >
                 demo Request
-              </div>
-              <div
+              </a>
+              <a
+                href="mailto:jobs@finiq.com"
                 onClick={() => setActive('careers')}
-                className={`w-[48%] sm:w-[22%] xl:w-auto px-[20px] py-[10px] border-2 border-bg-primary rounded-full text-xs lg:text-xs xl:text-base font-bold capitalize cursor-pointer hover:bg-bg-primary hover:text-white duration-300 ${
+                className={`w-[48%] sm:w-[22%] xl:w-auto px-[20px] py-[10px] border-2 border-bg-primary rounded-full text-xs lg:text-xs xl:text-[22px] font-bold capitalize cursor-pointer hover:bg-bg-primary hover:text-white duration-300 ${
                   active == 'careers'
                     ? 'bg-bg-primary text-white'
                     : 'bg-transparent text-bg-primary'
                 }`}
               >
                 Careers
-              </div>
-              <div
+              </a>
+              <a
+                href="mailto:meeting@finiq.com"
                 onClick={() => setActive('partnerships')}
-                className={`w-[48%] sm:w-[24%] xl:w-auto px-[20px] py-[10px] border-2 border-bg-primary rounded-full text-xs lg:text-xs xl:text-base font-bold capitalize cursor-pointer hover:bg-bg-primary hover:text-white duration-300 ${
+                className={`w-[48%] sm:w-[24%] xl:w-auto px-[20px] py-[10px] border-2 border-bg-primary rounded-full text-xs lg:text-xs xl:text-[22px] font-bold capitalize cursor-pointer hover:bg-bg-primary hover:text-white duration-300 ${
                   active == 'partnerships'
                     ? 'bg-bg-primary text-white'
                     : 'bg-transparent text-bg-primary'
                 }`}
               >
                 Partnerships
-              </div>
-              <div
+              </a>
+              <a
+                href="mailto:info@finiq.com"
                 onClick={() => setActive('general')}
-                className={`w-[48%] sm:w-[22%] xl:w-auto px-[20px] py-[10px] border-2 border-bg-primary rounded-full text-xs lg:text-xs xl:text-base font-bold capitalize cursor-pointer hover:bg-bg-primary hover:text-white duration-300 ${
+                className={`w-[48%] sm:w-[22%] xl:w-auto px-[20px] py-[10px] border-2 border-bg-primary rounded-full text-xs lg:text-xs xl:text-[22px] font-bold capitalize cursor-pointer hover:bg-bg-primary hover:text-white duration-300 ${
                   active == 'general'
                     ? 'bg-bg-primary text-white'
                     : 'bg-transparent text-bg-primary'
                 }`}
               >
                 General
-              </div>
+              </a>
             </div>
 
             {/* Form */}
@@ -168,7 +172,7 @@ const ContactSection = () => {
                 are well positioned to react to ever-changing market conditions.
               </p>
               <Link
-                to={'/'}
+                to={'/showcases'}
                 className="text-bg-primary text-[15px] font-bold mt-[50px] inline-block"
               >
                 - DISCOVER OUR LOCATIONS

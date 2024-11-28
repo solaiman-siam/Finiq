@@ -126,7 +126,11 @@ const NewsSection = () => {
     >
       <Container>
         {/* section title  */}
-        <h3 className="text-[30px] sm:text-[50px] font-bold capitalize text-text-primary mb-[30px]">
+        <h3
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          className="text-[30px] sm:text-[50px] font-bold capitalize text-text-primary mb-[30px]"
+        >
           News
         </h3>
 

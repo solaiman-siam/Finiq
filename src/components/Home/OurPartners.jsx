@@ -26,11 +26,17 @@ function OurPartners() {
     <div id="partners" className="relative z-[1] px-5 xl:px-0">
       <Container>
         <div className="py-24">
-          <h3 className="text-4xl sm:text-[50px] pb-10 sm:pb-16 md:pb-20 font-bold text-center sm:text-left text-text-primary">
+          <h3
+            data-aos="fade-left"
+            className="text-4xl sm:text-[50px] pb-10 sm:pb-16 md:pb-20 font-bold text-center sm:text-left text-text-primary"
+          >
             Our Partners
           </h3>
 
-          <div className="flex flex-wrap justify-center sm:justify-start gap-5 sm:gap-14">
+          <div
+            data-aos="fade-left"
+            className="flex flex-wrap justify-center sm:justify-start gap-5 sm:gap-14"
+          >
             <div className="h-5 lg:h-10 xl:h-14">
               <img className=" h-full object-contain" src={Icon21} alt="" />
             </div>

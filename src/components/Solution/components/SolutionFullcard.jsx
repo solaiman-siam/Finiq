@@ -15,12 +15,17 @@ function SolutionFullcard({ data }) {
         data.layout === 'full' ? 'w-full' : 'w-1/2'
       }`}
     >
-      <div className="card-full py-5 px-[30px] bg-white rounded-[10px]">
+      <div
+        data-aos="fade-left"
+        className="card-full py-5 px-[30px] bg-white rounded-[10px] group"
+      >
         <div>
           <AccordionItem value={`item-${data.id}`}>
             <AccordionTrigger
               className={`text-left !flex flex-col lg:flex-row items-center justify-between ${
-                data.isReversed ? 'lg:flex-row-reverse  pl-[100px]' : 'pr-[100px]'
+                data.isReversed
+                  ? 'lg:flex-row-reverse  pl-[100px]'
+                  : 'pr-[100px]'
               }`}
               onClick={() => setIscollapsed(!isCollapsed)}
             >
@@ -44,9 +49,9 @@ function SolutionFullcard({ data }) {
                   />
                 </div>
               </div>
-              <div className="order-1 sm:order-2">
+              <div className="order-1 sm:order-2 overflow-hidden">
                 <img
-                  className="w-[207px] h-[170px] object-cover lg:object-contain"
+                  className="w-[207px] h-[170px] object-cover lg:object-contain group-hover:scale-105 duration-300"
                   src={data.imgUrl}
                   alt={data.title}
                 />

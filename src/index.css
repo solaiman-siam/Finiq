@@ -9,6 +9,9 @@
   .common-gradient {
     @apply bg-gradient-to-r from-[#F5AC84] to-[#D88F67] font-semibold text-white;
   }
+  .common-gradient:hover {
+    @apply bg-gradient-to-r from-[#D88F67] to-[#F5AC84] font-semibold text-white;
+  }
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }

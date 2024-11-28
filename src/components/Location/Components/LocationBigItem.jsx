@@ -6,7 +6,11 @@ const LocationBigItem = ({ data }) => {
   const [overlay, setOverlay] = useState(false);
 
   return (
-    <div className="w-full sm:w-[70%] rounded-xl relative group overflow-hidden">
+    <div
+      data-aos="zoom-in"
+      data-aos-delay="500"
+      className="w-full sm:w-[70%] rounded-xl relative group overflow-hidden"
+    >
       <img
         src={data.image}
         alt="Destination Image"

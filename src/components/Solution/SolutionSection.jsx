@@ -158,10 +158,18 @@ function SolutionSection() {
       <Container>
         {/* section title  */}
         <div className="mb-[30px]">
-          <h3 className="text-[30px] sm:text-[50px] font-bold capitalize text-text-primary">
+          <h3
+            data-aos="fade-left"
+            data-aos-delay="500"
+            className="text-[30px] sm:text-[50px] font-bold capitalize text-text-primary"
+          >
             Build your own platform
           </h3>
-          <p className="text-base sm:text-lg mt-5 sm:w-[776px] leading-[27px]">
+          <p
+            data-aos="fade-left"
+            data-aos-delay="1000"
+            className="text-base sm:text-lg mt-5 sm:w-[776px] leading-[27px]"
+          >
             We have engineered a completely configurable range of technical
             modules that allow you to create a solution tailored to you, which
             we can support alongside any other platforms you wish to integrate

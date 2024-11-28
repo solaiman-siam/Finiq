@@ -38,7 +38,7 @@ function Footer() {
               </div>
               <div className="pt-2 w-7/12 sm:w-full flex justify-end sm:justify-start">
                 <Link to={'/contact'}>
-                  <button className="text-sm text-white bg-bg-primary font-bold font-ubuntu px-[30px] xl:px-12 py-4 rounded-full ">
+                  <button className="text-sm text-white bg-bg-primary font-bold font-ubuntu px-[30px] xl:px-12 py-4 rounded-full hover:bg-white hover:text-bg-primary duration-300">
                     Contact Us
                   </button>
                 </Link>
@@ -48,30 +48,46 @@ function Footer() {
             <div className="flex justify-between gap-x-[58px] sm:gap-x-[170px]">
               <div className="text-white flex flex-col text-lg space-y-6">
                 <Link to={'/'}>
-                  <h4 className="text-lg">Overview</h4>
+                  <h4 className="text-lg hover:text-bg-primary duration-300">
+                    Overview
+                  </h4>
                 </Link>
                 <Link to="#coreFramework">
-                  <h4 className="text-lg">Core Framework</h4>
+                  <h4 className="text-lg hover:text-bg-primary duration-300">
+                    Core Framework
+                  </h4>
                 </Link>
                 <Link to={'#partners'}>
-                  <h4 className="text-lg">Our Partners</h4>
+                  <h4 className="text-lg hover:text-bg-primary duration-300">
+                    Our Partners
+                  </h4>
                 </Link>
                 <Link to={'#about'}>
-                  <h4 className="text-lg">About Us</h4>
+                  <h4 className="text-lg hover:text-bg-primary duration-300">
+                    About Us
+                  </h4>
                 </Link>
               </div>
               <div className="text-white text-lg flex flex-col space-y-6">
                 <Link to={'/showcases'}>
-                  <h4>Showcase</h4>
+                  <h4 className="text-lg hover:text-bg-primary duration-300">
+                    Showcase
+                  </h4>
                 </Link>
                 <Link to={'/solutions'}>
-                  <h4>Solutions</h4>
+                  <h4 className="text-lg hover:text-bg-primary duration-300">
+                    Solutions
+                  </h4>
                 </Link>
                 <Link to={'/showcases'}>
-                  <h4>News</h4>
+                  <h4 className="text-lg hover:text-bg-primary duration-300">
+                    News
+                  </h4>
                 </Link>
                 <Link to={'/showcases'}>
-                  <h4>Locations</h4>
+                  <h4 className="text-lg hover:text-bg-primary duration-300">
+                    Locations
+                  </h4>
                 </Link>
               </div>
             </div>

@@ -7,7 +7,10 @@ function AboutUs() {
         <div className="flex-1 relative overflow-hidden flex justify-center items-center pt-[300px] pb-[50px] xl:py-32 px-5 xl:px-0 bg-bg-secondary z-[1]">
           <div className="w-full absolute top-0 z-[10] h-24 bg-white hidden xl:block"></div>
 
-          <div className="xl:pl-60 z-[2] xl:pr-14 pt-10 xl:pt-20 ">
+          <div
+            data-aos="fade-right"
+            className="xl:pl-60 z-[2] xl:pr-14 pt-10 xl:pt-20 "
+          >
             <h2 className="text-4xl font-bold text-text-primary pb-4">
               About Us
             </h2>
@@ -37,7 +40,12 @@ function AboutUs() {
         </div>
 
         <div className="flex-1 xl:static absolute top-[-100px] right-0 w-[85%] h-[400px] xl:h-auto z-[2]">
-          <img className="w-full h-full object-cover" src={AboutImg} alt="" />
+          <img
+            className="w-full h-full object-cover"
+            data-aos="zoom-in"
+            src={AboutImg}
+            alt=""
+          />
         </div>
       </div>
     </div>

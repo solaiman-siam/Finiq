@@ -19,8 +19,8 @@ function SolutionFullcard({ data }) {
         <div>
           <AccordionItem value={`item-${data.id}`}>
             <AccordionTrigger
-              className={`text-left !flex items-center justify-between ${
-                data.isReversed ? 'flex-row-reverse pl-[100px]' : 'pr-[100px]'
+              className={`text-left !flex flex-col lg:flex-row items-center justify-between ${
+                data.isReversed ? 'lg:flex-row-reverse  pl-[100px]' : 'pr-[100px]'
               }`}
               onClick={() => setIscollapsed(!isCollapsed)}
             >
@@ -46,7 +46,7 @@ function SolutionFullcard({ data }) {
               </div>
               <div className="order-1 sm:order-2">
                 <img
-                  className="w-[207px] h-[170px] object-cover"
+                  className="w-[207px] h-[170px] object-cover lg:object-contain"
                   src={data.imgUrl}
                   alt={data.title}
                 />

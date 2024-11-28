@@ -16,7 +16,7 @@ function SolutionHalfcard({ data }) {
           <AccordionTrigger className="w-full">
             <div className="w-full text-left">
               <img
-                className="object-cover h-[310px] w-full rounded-[10px]"
+                className="object-cover lg:object-contain h-[310px] w-full rounded-[10px]"
                 src={data.imgUrl}
                 alt={data.title}
               />

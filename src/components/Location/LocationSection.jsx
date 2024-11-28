@@ -284,13 +284,20 @@ const LocationSection = () => {
     >
       <Container>
         {/* section title  */}
-        <h3 className="text-[30px] sm:text-[50px] font-bold capitalize text-text-primary mb-[30px]">
+        <h3
+          data-aos="fade-left"
+          className="text-[30px] sm:text-[50px] font-bold capitalize text-text-primary mb-[30px]"
+        >
           Locations
         </h3>
 
         <div className="w-full flex gap-y-[50px] flex-wrap">
           {locationDatas.map((item) => (
-            <div key={item.id} className="w-full flex flex-col gap-y-6">
+            <div
+              data-aos="zoom-in"
+              key={item.id}
+              className="w-full flex flex-col gap-y-6"
+            >
               {/* Continent Name */}
               <div className="flex items-center gap-x-[10px]">
                 <div>

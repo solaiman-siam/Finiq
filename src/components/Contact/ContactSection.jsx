@@ -15,13 +15,25 @@ const ContactSection = () => {
       <Container>
         {/* section title  */}
         <div className="max-w-full lg:max-w-[60%] mb-[42px] px-5 xl:px-0">
-          <h3 className="text-[30px] lg:text-[50px] font-bold capitalize text-text-primary mb-[30px]">
+          <h3
+            data-aos="fade-left"
+            data-aos-delay="500"
+            className="text-[30px] lg:text-[50px] font-bold capitalize text-text-primary mb-[30px]"
+          >
             Contact Us
           </h3>
-          <h6 className="text-lg lg:text-[30px] text-text-primary mb-[18px] leading-[150%]">
+          <h6
+            data-aos="fade-left"
+            data-aos-delay="800"
+            className="text-lg lg:text-[30px] text-text-primary mb-[18px] leading-[150%]"
+          >
             Thanks for your interest. How can we help you?
           </h6>
-          <p className="text-paraColor text-base lg:text-lg font-medium leading-[150%]">
+          <p
+            data-aos="fade-left"
+            data-aos-delay="1000"
+            className="text-paraColor text-base lg:text-lg font-medium leading-[150%]"
+          >
             Have a question, comment, suggestion, or just want to get in touch?
             We;d love to hear from you. Fill out the form and someone will get
             back to you asap.
@@ -29,10 +41,16 @@ const ContactSection = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row h-full lg:gap-5">
-          <div className="w-full lg:w-[60%] h-full bg-white p-[35px] lg:rounded-[10px]">
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="500"
+            className="w-full lg:w-[60%] h-full bg-white p-[35px] lg:rounded-[10px]"
+          >
             {/* Type Selector */}
             <div className="w-full flex flex-wrap justify-between gap-y-3 items-center mb-10">
               <a
+                data-aos="fade-left"
+                data-aos-delay="1200"
                 href="mailto:meeting@finiq.com"
                 onClick={() => setActive('demo')}
                 className={`w-[48%] sm:w-[28%] xl:w-auto px-[20px] py-[10px] border-2 border-bg-primary rounded-full text-xs lg:text-xs xl:text-[22px] font-bold capitalize cursor-pointer hover:bg-bg-primary hover:text-white duration-300 ${
@@ -44,6 +62,8 @@ const ContactSection = () => {
                 demo Request
               </a>
               <a
+                data-aos="fade-left"
+                data-aos-delay="1500"
                 href="mailto:jobs@finiq.com"
                 onClick={() => setActive('careers')}
                 className={`w-[48%] sm:w-[22%] xl:w-auto px-[20px] py-[10px] border-2 border-bg-primary rounded-full text-xs lg:text-xs xl:text-[22px] font-bold capitalize cursor-pointer hover:bg-bg-primary hover:text-white duration-300 ${
@@ -55,6 +75,8 @@ const ContactSection = () => {
                 Careers
               </a>
               <a
+                data-aos="fade-left"
+                data-aos-delay="1700"
                 href="mailto:meeting@finiq.com"
                 onClick={() => setActive('partnerships')}
                 className={`w-[48%] sm:w-[24%] xl:w-auto px-[20px] py-[10px] border-2 border-bg-primary rounded-full text-xs lg:text-xs xl:text-[22px] font-bold capitalize cursor-pointer hover:bg-bg-primary hover:text-white duration-300 ${
@@ -66,6 +88,8 @@ const ContactSection = () => {
                 Partnerships
               </a>
               <a
+                data-aos="fade-left"
+                data-aos-delay="2000"
                 href="mailto:info@finiq.com"
                 onClick={() => setActive('general')}
                 className={`w-[48%] sm:w-[22%] xl:w-auto px-[20px] py-[10px] border-2 border-bg-primary rounded-full text-xs lg:text-xs xl:text-[22px] font-bold capitalize cursor-pointer hover:bg-bg-primary hover:text-white duration-300 ${
@@ -80,6 +104,8 @@ const ContactSection = () => {
 
             {/* Form */}
             <form
+              data-aos="fade-top"
+              data-aos-delay="2000"
               onSubmit={handleSubmit}
               className="w-full h-full flex flex-col gap-y-8 lg:gap-y-[52px]"
             >
@@ -156,7 +182,11 @@ const ContactSection = () => {
             </form>
           </div>
 
-          <div className="w-full lg:w-[40%] h-full bg-white/30 px-5 py-10 rounded-[10px]">
+          <div
+            data-aos="fade-left"
+            data-aos-delay="1000"
+            className="w-full lg:w-[40%] h-full bg-white/30 px-5 py-10 rounded-[10px]"
+          >
             <div className="w-full h-full">
               <div className="w-full h-full flex items-center gap-x-[10px] mb-[10px]">
                 <img src="/place_marker.png" alt="" className="w-[42px]" />

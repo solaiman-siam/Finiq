@@ -7,7 +7,11 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="absolute top-0 left-0 w-full mx-auto z-50">
+    <div
+      data-aos="fade-down"
+      data-aos-delay="500"
+      className="absolute top-0 left-0 w-full mx-auto z-50"
+    >
       <Container>
         <div className="flex items-center mx-5 mx:px-0 lg:items-top border-b border-[#DCDCDC] justify-between">
           <div className="py-6">
@@ -39,7 +43,7 @@ function Navbar() {
                 className={({ isActive }) =>
                   isActive
                     ? 'text-bg-primary lg:border-t-4 lg:text-bg-primary lg:border-bg-primary'
-                    : 'lg:border-t-4 lg:text-bg-white lg:border-transparent'
+                    : 'lg:border-t-4 lg:text-bg-white lg:border-transparent hover:text-bg-primary lg:hover:border-bg-primary duration-300'
                 }
               >
                 <h4 className="px-4 lg:py-10  h-full">Home</h4>
@@ -50,7 +54,7 @@ function Navbar() {
                 className={({ isActive }) =>
                   isActive
                     ? 'text-bg-primary lg:border-t-4 lg:text-bg-primary lg:border-bg-primary'
-                    : 'lg:border-t-4 lg:text-bg-white lg:border-transparent'
+                    : 'lg:border-t-4 lg:text-bg-white lg:border-transparent hover:text-bg-primary lg:hover:border-bg-primary duration-300'
                 }
               >
                 <h4 className="px-4 lg:py-10   h-full">Solutions</h4>
@@ -61,7 +65,7 @@ function Navbar() {
                 className={({ isActive }) =>
                   isActive
                     ? 'text-bg-primary lg:border-t-4 lg:text-bg-primary lg:border-bg-primary'
-                    : 'lg:border-t-4 lg:text-bg-white lg:border-transparent'
+                    : 'lg:border-t-4 lg:text-bg-white lg:border-transparent hover:text-bg-primary lg:hover:border-bg-primary duration-300'
                 }
               >
                 <h4 className="px-4 lg:py-10 h-full">Showcase</h4>
@@ -69,7 +73,7 @@ function Navbar() {
             </div>
             <div>
               <Link to={'/contact'} onClick={() => setIsOpen(false)}>
-                <h4 className="px-8 my-7 py-4 rounded-full common-gradient text-center text-sm lg:text-base font-bold">
+                <h4 className="px-8 my-[26px] py-4 rounded-full bg-bg-primary border-2 border-transparent text-white text-center text-sm lg:text-base font-bold hover:text-bg-primary hover:bg-white hover:border-bg-primary duration-300">
                   Contact Us
                 </h4>
               </Link>

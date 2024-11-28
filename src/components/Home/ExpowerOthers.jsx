@@ -11,7 +11,10 @@ function ExpowerOthers() {
     <div>
       <Container>
         <div className="pt-16 sm:pt-24 px-5 xl:px-0">
-          <div className="flex w-full items-center flex-col  justify-center gap-4 pb-12">
+          <div
+            data-aos="zoom-in"
+            className="flex w-full items-center flex-col  justify-center gap-4 pb-12"
+          >
             <h3 className="text-4xl sm:text-[50px] text-center font-bold text-text-primary mb-4">
               FinIQ empowers others to excel!
             </h3>
@@ -22,10 +25,13 @@ function ExpowerOthers() {
           </div>
           <div className="grid sm:grid-cols-3 gap-6">
             {/* item 1 */}
-            <div className="bg-[#F6ECE6] shadow-lg rounded-xl overflow-hidden">
-              <div className="relative overflow-hidden rounded-xl h-[240px]">
+            <div
+              data-aos="fade-left"
+              className="bg-[#F6ECE6] shadow-lg rounded-xl overflow-hidden"
+            >
+              <div className="relative overflow-hidden rounded-xl h-[240px] group">
                 <img
-                  className="absolute top-0 left-0 z-[4] object-cover w-full h-full"
+                  className="absolute top-0 left-0 z-[4] object-cover w-full h-full group-hover:scale-105 duration-300"
                   src={Empower1}
                   alt=""
                 />
@@ -45,10 +51,13 @@ function ExpowerOthers() {
               </div>
             </div>
             {/* item 2 */}
-            <div className="bg-[#F6ECE6] shadow-lg rounded-xl overflow-hidden">
-              <div className="relative overflow-hidden rounded-xl h-[240px]">
+            <div
+              data-aos="zoom-in"
+              className="bg-[#F6ECE6] shadow-lg rounded-xl overflow-hidden"
+            >
+              <div className="relative overflow-hidden rounded-xl h-[240px] group">
                 <img
-                  className="absolute top-0 left-0 z-[4]  object-cover w-full h-full"
+                  className="absolute top-0 left-0 z-[4]  object-cover w-full h-full group-hover:scale-105 duration-300"
                   src={Empower2}
                   alt=""
                 />
@@ -68,10 +77,13 @@ function ExpowerOthers() {
               </div>
             </div>
             {/* item 3 */}
-            <div className="bg-[#F6ECE6] shadow-lg rounded-xl overflow-hidden">
-              <div className="relative overflow-hidden rounded-xl h-[240px]">
+            <div
+              data-aos="fade-right"
+              className="bg-[#F6ECE6] shadow-lg rounded-xl overflow-hidden"
+            >
+              <div className="relative overflow-hidden rounded-xl h-[240px] group">
                 <img
-                  className="absolute top-0 left-0 z-[4]  object-cover w-full h-full"
+                  className="absolute top-0 left-0 z-[4]  object-cover w-full h-full group-hover:scale-105 duration-300"
                   src={Empower3}
                   alt=""
                 />

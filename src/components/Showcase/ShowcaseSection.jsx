@@ -127,7 +127,12 @@ function ShowcaseSection() {
     <section className="pt-[70px] pb-[50px] sm:pb-[100px] z-[1]">
       <Container>
         {/* section title  */}
-        <div className="mb-[30px]">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+          className="mb-[30px]"
+        >
           <h3 className="text-[32px] sm:text-[50px] font-bold capitalize text-text-primary">
             Showcase
           </h3>

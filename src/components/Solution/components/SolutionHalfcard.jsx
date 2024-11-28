@@ -11,15 +11,21 @@ function SolutionHalfcard({ data }) {
         data.layout === 'full' ? 'w-full' : 'w-full sm:w-1/2'
       }`}
     >
-      <div className="bg-white p-2 rounded-[10px] mt-6 min-h-[547px]">
+      <div
+        data-aos="fade-right"
+        data-aos-delay="500"
+        className="bg-white p-2 rounded-[10px] mt-6 min-h-[547px] group overflow-hidden"
+      >
         <AccordionItem value={`item-${data.id}`}>
           <AccordionTrigger className="w-full">
             <div className="w-full text-left">
-              <img
-                className="object-cover lg:object-contain h-[310px] w-full rounded-[10px]"
-                src={data.imgUrl}
-                alt={data.title}
-              />
+              <div className="h-[200px] sm:h-[310px] w-full overflow-hidden rounded-[10px]">
+                <img
+                  className="object-cover lg:object-contain h-full w-full rounded-[10px] group-hover:scale-105 duration-300"
+                  src={data.imgUrl}
+                  alt={data.title}
+                />
+              </div>
               <div className="mt-5 px-5">
                 <p className="text-[12px] max-w-[473px] font-bold leading-[18px] text-black no-underline">
                   {data.topTitle}

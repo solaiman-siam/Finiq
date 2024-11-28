@@ -1,3 +1,4 @@
+import AosProvider from '@/provider/aos/AosProvider';
 import { Outlet, ScrollRestoration } from 'react-router-dom';
 import Footer from '../shared/Footer/Footer';
 import Navbar from '../shared/Navbar/Navbar';
@@ -8,11 +9,13 @@ function MainLayout() {
   };
 
   return (
-    <div className="font-poppins relative scroll-smooth">
+    <div className="font-poppins relative scroll-smooth !overflow-x-hidden">
       <ScrollRestoration></ScrollRestoration>
-      <Navbar></Navbar>
-      <Outlet></Outlet>
-      <Footer></Footer>
+      <AosProvider>
+        <Navbar></Navbar>
+        <Outlet></Outlet>
+        <Footer></Footer>
+      </AosProvider>
 
       <div
         onClick={handelBackToTop}

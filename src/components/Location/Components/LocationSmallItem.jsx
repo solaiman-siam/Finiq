@@ -5,7 +5,10 @@ import { FaPlus } from 'react-icons/fa6';
 const LocationSmallItem = ({ data }) => {
   const [overlay, setOverlay] = useState(false);
   return (
-    <div className="w-full sm:w-[31%] rounded-xl relative group overflow-hidden">
+    <div
+      data-aos="zoom-in"
+      className="w-full sm:w-[31%] rounded-xl relative group overflow-hidden"
+    >
       <img
         src={data.image}
         alt="Destination Image"

@@ -23,7 +23,7 @@ import Container from '../Container';
 
 function OurPartners() {
   return (
-    <div className="relative z-[1] px-5 xl:px-0">
+    <div id="partners" className="relative z-[1] px-5 xl:px-0">
       <Container>
         <div className="py-24">
           <h3 className="text-4xl sm:text-[50px] pb-10 sm:pb-16 md:pb-20 font-bold text-center sm:text-left text-text-primary">

@@ -1,8 +1,12 @@
+import { Link } from 'react-router-dom';
 import Container from '../Container';
 
 function CoreFrameworkPowering() {
   return (
-    <div className="w-full h-full bg-bg-secondary py-[50px] sm:py-[70px] md:py-24 px-5 xl:px-0">
+    <div
+      id="coreFramework"
+      className="w-full h-full bg-bg-secondary py-[50px] sm:py-[70px] md:py-24 px-5 xl:px-0"
+    >
       <Container>
         <div className="">
           <h3 className="text-[30px] sm:text-4xl text-center font-bold text-text-primary">
@@ -10,7 +14,7 @@ function CoreFrameworkPowering() {
           </h3>
 
           <div className="grid sm:grid-cols-3 gap-6 pt-8">
-            <div>
+            <Link to={'/showcases'}>
               <div className="rounded-xl overflow-hidden h-[300px] ">
                 <img
                   className="w-full h-full object-cover"
@@ -32,8 +36,8 @@ function CoreFrameworkPowering() {
                   processes—all with almost no coding.
                 </p>
               </div>
-            </div>
-            <div>
+            </Link>
+            <Link to={'/showcases'}>
               <div className="rounded-xl overflow-hidden h-[300px] ">
                 <img
                   className="w-full h-full object-cover"
@@ -57,8 +61,8 @@ function CoreFrameworkPowering() {
                   processes—all with almost no coding.
                 </p>
               </div>
-            </div>
-            <div>
+            </Link>
+            <Link to={'/showcases'}>
               <div className="rounded-xl overflow-hidden h-[300px] ">
                 <img
                   className="w-full h-full object-cover"
@@ -82,7 +86,7 @@ function CoreFrameworkPowering() {
                   processes—all with almost no coding.
                 </p>
               </div>
-            </div>
+            </Link>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-6 p-4 divide-[#DCDCDC] divide-y-2 sm:divide-bg-secondary rounded-lg sm:bg-white mt-5 sm:mt-14 sm:divide-x sm:divide-y-0">

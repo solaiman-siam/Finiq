@@ -26,7 +26,7 @@ function SolutionFullcard({ data }) {
             >
               <div className="max-w-[800px] order-2 sm:order-1">
                 <p className="text-[12px] font-bold leading-[18px] text-black no-underline">
-                  {data.topTitle} ****somor
+                  {data.topTitle}
                 </p>
                 <h3 className="text-[22px] sm:text-[28px] font-bold text-bg-primary mt-[6px] mb-[10px]">
                   {data.title}

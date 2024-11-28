@@ -1,11 +1,10 @@
-import { useState } from 'react';
-import { FaXmark } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 
 const ShowcaseHalfItem = ({ data }) => {
-  const [activeArticle, setActiveArticle] = useState(false);
+  // const [activeArticle, setActiveArticle] = useState(false);
 
   return (
-    <div className="w-full bg-white flex flex-col justify-between p-5 rounded-[10px]">
+    <div className="w-full bg-white flex flex-col p-5 rounded-[10px]">
       <img
         src={data.imgUrl}
         alt="Showcase Item Image"
@@ -26,26 +25,27 @@ const ShowcaseHalfItem = ({ data }) => {
         </p>
       </div>
 
-      <div className="mt-5">
-        <button
-          onClick={() => setActiveArticle(true)}
-          className="text-text-primary text-sm font-poppins capitalize pl-[32px] py-[5px] pr-2 border-2 border-[#F4AB83] rounded-[35px] inline-block"
-        >
-          Read More
-          <img src="/arrow.png" className="inline pl-9" />
-        </button>
-      </div>
+      {data.link && (
+        <div className="mt-5">
+          <Link
+            to={data.link}
+            target="_blank"
+            className="text-text-primary text-sm font-poppins capitalize pl-[32px] py-[5px] pr-2 border-2 border-[#F4AB83] rounded-[35px] inline-block"
+          >
+            Read More
+            <img src="/arrow.png" className="inline pl-9" />
+          </Link>
+        </div>
+      )}
 
-      {activeArticle && (
+      {/* {activeArticle && (
         <div className="fixed top-0 left-0 w-full h-full flex justify-center items-end z-[51]">
           <div
             onClick={() => setActiveArticle(false)}
             className="absolute top-0 left-0 w-full h-full bg-black/40 z-[-1]"
           ></div>
 
-          {/* Transparent Background */}
           <div className="absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] w-[90%] sm:w-[60%] h-[90%] sm:h-[80%] flex justify-center items-center rounded-[10px] overflow-y-scroll no-scrollbar bg-white">
-            {/* Background Click Closer */}
             <div
               onClick={() => setActiveArticle(false)}
               className="absolute top-3 right-3 bg-bg-primary rounded-full w-10 h-10 flex justify-center items-center cursor-pointer"
@@ -53,7 +53,6 @@ const ShowcaseHalfItem = ({ data }) => {
               <FaXmark className="text-white text-xl" />
             </div>
 
-            {/* Main Contents */}
             <div className="w-full h-full bg-white flex flex-col justify-between py-10 px-10 rounded-[10px]">
               <img
                 src={data.imgUrl}
@@ -85,7 +84,7 @@ const ShowcaseHalfItem = ({ data }) => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 };

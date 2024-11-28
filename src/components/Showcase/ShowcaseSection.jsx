@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Container from '../Container';
 import ShowcaseList from './Components/ShowcaseList';
 
@@ -23,6 +24,7 @@ FinIQ specialises in distribution and transaction processing of treasury and wea
 
 The FinIQ solution automates instruments ranging from traditional products such as FX spot, options, bonds, stocks, Funds, Insurance, IRS to more sophisticated products such as OTC accumulators, ELN, dual currency investments, target redemptions, and range accruals.`,
     imgUrl: '/showcase-img-1.png',
+    link: 'https://www.privatebankerinternational.com/news/lgt-finiq-automation-structured-products-derivatives/',
   },
   {
     id: 2,
@@ -67,6 +69,7 @@ FinIQ specialises in distribution and transaction processing of treasury and wea
 
 The FinIQ solution automates instruments ranging from traditional products such as FX spot, options, bonds, stocks, Funds, Insurance, IRS to more sophisticated products such as OTC accumulators, ELN, dual currency investments, target redemptions, and range accruals.`,
     imgUrl: '/showcase-img-3.png',
+    link: 'https://www.nomuraconnects.com/focused-thinking-posts/fx-options-embracing-the-potential-of-platforms/?token=tVJkpPC_j3JHs6LBMLY7ACqvX0zoyzpv',
   },
   {
     id: 4,
@@ -89,6 +92,7 @@ FinIQ specialises in distribution and transaction processing of treasury and wea
 
 The FinIQ solution automates instruments ranging from traditional products such as FX spot, options, bonds, stocks, Funds, Insurance, IRS to more sophisticated products such as OTC accumulators, ELN, dual currency investments, target redemptions, and range accruals.`,
     imgUrl: '/showcase-img-4.png',
+    link: 'https://www.structuredretailproducts.com/news/76785/exclusive-finiq-sets-mip-world-record-aims-at-us100bn',
   },
   {
     id: 5,
@@ -115,6 +119,10 @@ The FinIQ solution automates instruments ranging from traditional products such 
 ];
 
 function ShowcaseSection() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
   return (
     <section className="pt-[70px] pb-[50px] sm:pb-[100px] z-[1]">
       <Container>

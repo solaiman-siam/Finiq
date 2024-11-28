@@ -168,7 +168,7 @@ Unit IH-00-01-02-OF-01 Level 2, IH-00-01-CP-05, Dubai International Financial Ce
       },
       {
         id: 2,
-        name: 'Madird',
+        name: 'Madrid',
         image: '/madrid.png',
         flag: '/spain.png',
         layout: 'small',

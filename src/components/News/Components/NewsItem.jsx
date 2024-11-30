@@ -9,7 +9,6 @@ const NewsItem = ({ data }) => {
   const [nextBtnDisabled, setNextBtnDisabled] = useState(false);
 
   const handelPreviousNews = () => {
-    console.log(currentActivePegin);
     currentActivePegin > 1
       ? (() => {
           setNextBtnDisabled(false);

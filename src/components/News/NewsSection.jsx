@@ -5,32 +5,356 @@ const newsDatas = [
   {
     id: 1,
     year: 2018,
-    newsItems: [],
+    newsItems: [
+      {
+        id: 1,
+        month: '',
+        year: '2018',
+        headline: 'Zurich sspa event ',
+        description:
+          'SSPA – a thoughtful ambassador for the structured products industry in Switzerland',
+        link: 'https://sspa.ch/en/ueber-uns/',
+      },
+      {
+        id: 2,
+        month: '',
+        year: '2018',
+        headline: 'Ice event ',
+        description:
+          'ICE’s Strategic Alliances program is designed to connect our comprehensive data with technology vendors to enhance our clients’ workflows. From cloud providers to back-office systems, we join forces with a wide range of solution providers to help meet our clients’ needs.',
+        link: 'https://www.ice.com/fixed-income-data-services/strategic-alliances',
+      },
+      {
+        id: 3,
+        month: '',
+        year: '2018',
+        headline: 'Math finance event - frankfurt',
+        description: `24th MathFinance
+Conference`,
+        link: 'https://www.mathfinance.com/events/24th-mathfinance-conference/',
+      },
+      {
+        id: 4,
+        month: 'August',
+        year: '2018',
+        headline: 'A pure-play private bank from Geneva has opted for FinIQ',
+        description: `A pure-play private bank from Geneva has opted for FinIQ to automate its flows for structured products. The bank will make use of the FinIQ multi issuer platform to connect into a network of leading liquidity providers for pricing and execution of its equity linked payoffs. The system is expected to go live in Q4.`,
+        link: '',
+      },
+      {
+        id: 5,
+        month: 'July',
+        year: '2018',
+        headline: 'Futu securities hong kong',
+        description: `Futu Securities in Hong Kong alongwith its Singapore arm, Moomoo became a FinIQ client subscribing to FinIQ’s EQ Connect structured products pricing and execution cloud platform, further solidifying cross segment reach of EQ Connect. The platform will enable Futu and Moomoo to get real-time price quotation from a panel of leading investment banks allowing their clients with best execution of various equity linked structured notes.`,
+        link: '',
+      },
+      {
+        id: 6,
+        date: '17',
+        month: 'June',
+        year: '2018',
+        headline:
+          'FinIQ FXDConnect goes live in Europe with Europe’s second largest private bank',
+        description: `FinIQ is pleased to announce its rollout at a top European private bank starting with their front office users in Geneva. The initial best execution panel will have 6 liquidity providers, two each from US, UK and France. The payoff list includes vanillas, strategies, barriers, TRF, pivot and accumulators.`,
+        link: '',
+      },
+    ],
   },
   {
     id: 2,
     year: 2019,
-    newsItems: [],
+    newsItems: [
+      {
+        id: 1,
+        month: '',
+        year: '2019',
+        headline: 'Zurich sspa event ',
+        description:
+          'SSPA – a thoughtful ambassador for the structured products industry in Switzerland',
+        link: 'https://sspa.ch/en/ueber-uns/',
+      },
+      {
+        id: 2,
+        month: '',
+        year: '2019',
+        headline: 'Ice event ',
+        description:
+          'ICE’s Strategic Alliances program is designed to connect our comprehensive data with technology vendors to enhance our clients’ workflows. From cloud providers to back-office systems, we join forces with a wide range of solution providers to help meet our clients’ needs.',
+        link: 'https://www.ice.com/fixed-income-data-services/strategic-alliances',
+      },
+      {
+        id: 3,
+        month: '',
+        year: '2019',
+        headline: 'Math finance event - frankfurt',
+        description: `24th MathFinance
+Conference`,
+        link: 'https://www.mathfinance.com/events/24th-mathfinance-conference/',
+      },
+      {
+        id: 4,
+        month: 'August',
+        year: '2019',
+        headline: 'A pure-play private bank from Geneva has opted for FinIQ',
+        description: `A pure-play private bank from Geneva has opted for FinIQ to automate its flows for structured products. The bank will make use of the FinIQ multi issuer platform to connect into a network of leading liquidity providers for pricing and execution of its equity linked payoffs. The system is expected to go live in Q4.`,
+        link: '',
+      },
+      {
+        id: 5,
+        month: 'July',
+        year: '2019',
+        headline: 'Futu securities hong kong',
+        description: `Futu Securities in Hong Kong alongwith its Singapore arm, Moomoo became a FinIQ client subscribing to FinIQ’s EQ Connect structured products pricing and execution cloud platform, further solidifying cross segment reach of EQ Connect. The platform will enable Futu and Moomoo to get real-time price quotation from a panel of leading investment banks allowing their clients with best execution of various equity linked structured notes.`,
+        link: '',
+      },
+      {
+        id: 6,
+        date: '17',
+        month: 'June',
+        year: '2019',
+        headline:
+          'FinIQ FXDConnect goes live in Europe with Europe’s second largest private bank',
+        description: `FinIQ is pleased to announce its rollout at a top European private bank starting with their front office users in Geneva. The initial best execution panel will have 6 liquidity providers, two each from US, UK and France. The payoff list includes vanillas, strategies, barriers, TRF, pivot and accumulators.`,
+        link: '',
+      },
+    ],
   },
   {
     id: 3,
     year: 2020,
-    newsItems: [],
+    newsItems: [
+      {
+        id: 1,
+        month: '',
+        year: '2020',
+        headline: 'Zurich sspa event ',
+        description:
+          'SSPA – a thoughtful ambassador for the structured products industry in Switzerland',
+        link: 'https://sspa.ch/en/ueber-uns/',
+      },
+      {
+        id: 2,
+        month: '',
+        year: '2020',
+        headline: 'Ice event ',
+        description:
+          'ICE’s Strategic Alliances program is designed to connect our comprehensive data with technology vendors to enhance our clients’ workflows. From cloud providers to back-office systems, we join forces with a wide range of solution providers to help meet our clients’ needs.',
+        link: 'https://www.ice.com/fixed-income-data-services/strategic-alliances',
+      },
+      {
+        id: 3,
+        month: '',
+        year: '2020',
+        headline: 'Math finance event - frankfurt',
+        description: `24th MathFinance
+Conference`,
+        link: 'https://www.mathfinance.com/events/24th-mathfinance-conference/',
+      },
+      {
+        id: 4,
+        month: 'August',
+        year: '2020',
+        headline: 'A pure-play private bank from Geneva has opted for FinIQ',
+        description: `A pure-play private bank from Geneva has opted for FinIQ to automate its flows for structured products. The bank will make use of the FinIQ multi issuer platform to connect into a network of leading liquidity providers for pricing and execution of its equity linked payoffs. The system is expected to go live in Q4.`,
+        link: '',
+      },
+      {
+        id: 5,
+        month: 'July',
+        year: '2020',
+        headline: 'Futu securities hong kong',
+        description: `Futu Securities in Hong Kong alongwith its Singapore arm, Moomoo became a FinIQ client subscribing to FinIQ’s EQ Connect structured products pricing and execution cloud platform, further solidifying cross segment reach of EQ Connect. The platform will enable Futu and Moomoo to get real-time price quotation from a panel of leading investment banks allowing their clients with best execution of various equity linked structured notes.`,
+        link: '',
+      },
+      {
+        id: 6,
+        date: '17',
+        month: 'June',
+        year: '2020',
+        headline:
+          'FinIQ FXDConnect goes live in Europe with Europe’s second largest private bank',
+        description: `FinIQ is pleased to announce its rollout at a top European private bank starting with their front office users in Geneva. The initial best execution panel will have 6 liquidity providers, two each from US, UK and France. The payoff list includes vanillas, strategies, barriers, TRF, pivot and accumulators.`,
+        link: '',
+      },
+    ],
   },
   {
     id: 4,
     year: 2021,
-    newsItems: [],
+    newsItems: [
+      {
+        id: 1,
+        month: '',
+        year: '2021',
+        headline: 'Zurich sspa event ',
+        description:
+          'SSPA – a thoughtful ambassador for the structured products industry in Switzerland',
+        link: 'https://sspa.ch/en/ueber-uns/',
+      },
+      {
+        id: 2,
+        month: '',
+        year: '2021',
+        headline: 'Ice event ',
+        description:
+          'ICE’s Strategic Alliances program is designed to connect our comprehensive data with technology vendors to enhance our clients’ workflows. From cloud providers to back-office systems, we join forces with a wide range of solution providers to help meet our clients’ needs.',
+        link: 'https://www.ice.com/fixed-income-data-services/strategic-alliances',
+      },
+      {
+        id: 3,
+        month: '',
+        year: '2021',
+        headline: 'Math finance event - frankfurt',
+        description: `24th MathFinance
+Conference`,
+        link: 'https://www.mathfinance.com/events/24th-mathfinance-conference/',
+      },
+      {
+        id: 4,
+        month: 'August',
+        year: '2021',
+        headline: 'A pure-play private bank from Geneva has opted for FinIQ',
+        description: `A pure-play private bank from Geneva has opted for FinIQ to automate its flows for structured products. The bank will make use of the FinIQ multi issuer platform to connect into a network of leading liquidity providers for pricing and execution of its equity linked payoffs. The system is expected to go live in Q4.`,
+        link: '',
+      },
+      {
+        id: 5,
+        month: 'July',
+        year: '2021',
+        headline: 'Futu securities hong kong',
+        description: `Futu Securities in Hong Kong alongwith its Singapore arm, Moomoo became a FinIQ client subscribing to FinIQ’s EQ Connect structured products pricing and execution cloud platform, further solidifying cross segment reach of EQ Connect. The platform will enable Futu and Moomoo to get real-time price quotation from a panel of leading investment banks allowing their clients with best execution of various equity linked structured notes.`,
+        link: '',
+      },
+      {
+        id: 6,
+        date: '17',
+        month: 'June',
+        year: '2021',
+        headline:
+          'FinIQ FXDConnect goes live in Europe with Europe’s second largest private bank',
+        description: `FinIQ is pleased to announce its rollout at a top European private bank starting with their front office users in Geneva. The initial best execution panel will have 6 liquidity providers, two each from US, UK and France. The payoff list includes vanillas, strategies, barriers, TRF, pivot and accumulators.`,
+        link: '',
+      },
+    ],
   },
   {
     id: 5,
     year: 2022,
-    newsItems: [],
+    newsItems: [
+      {
+        id: 1,
+        month: '',
+        year: '2022',
+        headline: 'Zurich sspa event ',
+        description:
+          'SSPA – a thoughtful ambassador for the structured products industry in Switzerland',
+        link: 'https://sspa.ch/en/ueber-uns/',
+      },
+      {
+        id: 2,
+        month: '',
+        year: '2022',
+        headline: 'Ice event ',
+        description:
+          'ICE’s Strategic Alliances program is designed to connect our comprehensive data with technology vendors to enhance our clients’ workflows. From cloud providers to back-office systems, we join forces with a wide range of solution providers to help meet our clients’ needs.',
+        link: 'https://www.ice.com/fixed-income-data-services/strategic-alliances',
+      },
+      {
+        id: 3,
+        month: '',
+        year: '2022',
+        headline: 'Math finance event - frankfurt',
+        description: `24th MathFinance
+Conference`,
+        link: 'https://www.mathfinance.com/events/24th-mathfinance-conference/',
+      },
+      {
+        id: 4,
+        month: 'August',
+        year: '2022',
+        headline: 'A pure-play private bank from Geneva has opted for FinIQ',
+        description: `A pure-play private bank from Geneva has opted for FinIQ to automate its flows for structured products. The bank will make use of the FinIQ multi issuer platform to connect into a network of leading liquidity providers for pricing and execution of its equity linked payoffs. The system is expected to go live in Q4.`,
+        link: '',
+      },
+      {
+        id: 5,
+        month: 'July',
+        year: '2022',
+        headline: 'Futu securities hong kong',
+        description: `Futu Securities in Hong Kong alongwith its Singapore arm, Moomoo became a FinIQ client subscribing to FinIQ’s EQ Connect structured products pricing and execution cloud platform, further solidifying cross segment reach of EQ Connect. The platform will enable Futu and Moomoo to get real-time price quotation from a panel of leading investment banks allowing their clients with best execution of various equity linked structured notes.`,
+        link: '',
+      },
+      {
+        id: 6,
+        date: '17',
+        month: 'June',
+        year: '2022',
+        headline:
+          'FinIQ FXDConnect goes live in Europe with Europe’s second largest private bank',
+        description: `FinIQ is pleased to announce its rollout at a top European private bank starting with their front office users in Geneva. The initial best execution panel will have 6 liquidity providers, two each from US, UK and France. The payoff list includes vanillas, strategies, barriers, TRF, pivot and accumulators.`,
+        link: '',
+      },
+    ],
   },
   {
     id: 6,
     year: 2023,
-    newsItems: [],
+    newsItems: [
+      {
+        id: 1,
+        month: '',
+        year: '2023',
+        headline: 'Zurich sspa event ',
+        description:
+          'SSPA – a thoughtful ambassador for the structured products industry in Switzerland',
+        link: 'https://sspa.ch/en/ueber-uns/',
+      },
+      {
+        id: 2,
+        month: '',
+        year: '2023',
+        headline: 'Ice event ',
+        description:
+          'ICE’s Strategic Alliances program is designed to connect our comprehensive data with technology vendors to enhance our clients’ workflows. From cloud providers to back-office systems, we join forces with a wide range of solution providers to help meet our clients’ needs.',
+        link: 'https://www.ice.com/fixed-income-data-services/strategic-alliances',
+      },
+      {
+        id: 3,
+        month: '',
+        year: '2023',
+        headline: 'Math finance event - frankfurt',
+        description: `24th MathFinance
+Conference`,
+        link: 'https://www.mathfinance.com/events/24th-mathfinance-conference/',
+      },
+      {
+        id: 4,
+        month: 'August',
+        year: '2023',
+        headline: 'A pure-play private bank from Geneva has opted for FinIQ',
+        description: `A pure-play private bank from Geneva has opted for FinIQ to automate its flows for structured products. The bank will make use of the FinIQ multi issuer platform to connect into a network of leading liquidity providers for pricing and execution of its equity linked payoffs. The system is expected to go live in Q4.`,
+        link: '',
+      },
+      {
+        id: 5,
+        month: 'July',
+        year: '2023',
+        headline: 'Futu securities hong kong',
+        description: `Futu Securities in Hong Kong alongwith its Singapore arm, Moomoo became a FinIQ client subscribing to FinIQ’s EQ Connect structured products pricing and execution cloud platform, further solidifying cross segment reach of EQ Connect. The platform will enable Futu and Moomoo to get real-time price quotation from a panel of leading investment banks allowing their clients with best execution of various equity linked structured notes.`,
+        link: '',
+      },
+      {
+        id: 6,
+        date: '17',
+        month: 'June',
+        year: '2023',
+        headline:
+          'FinIQ FXDConnect goes live in Europe with Europe’s second largest private bank',
+        description: `FinIQ is pleased to announce its rollout at a top European private bank starting with their front office users in Geneva. The initial best execution panel will have 6 liquidity providers, two each from US, UK and France. The payoff list includes vanillas, strategies, barriers, TRF, pivot and accumulators.`,
+        link: '',
+      },
+    ],
   },
   {
     id: 7,
@@ -122,7 +446,7 @@ const NewsSection = () => {
   return (
     <section
       id="news"
-      className="bg-white pt-[50px] sm:pt-[100px] pb-[61px] relative z-[1] px-5 xl:px-0"
+      className="bg-white pt-[50px] sm:pt-[100px] pb-[61px] relative z-[1] px-5 xxl:px-0"
     >
       <Container>
         {/* section title  */}
@@ -135,7 +459,6 @@ const NewsSection = () => {
         </h3>
 
         <div className="mt-7">
-          {/* <NewsTimeline data={newsDatas} /> */}
           <NewsItem data={newsDatas} />
         </div>
       </Container>

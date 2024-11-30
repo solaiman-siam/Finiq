@@ -7,6 +7,7 @@ const showcaseData = [
     id: 1,
     topTitle: 'RM Platform',
     info: 'LGT and FinIQ partner to boost automation in structured products and derivatives',
+    popup: false,
     description: `Liechtenstein-based private bank LGT and software provider FinIQ have worked together to automate and streamline its structured products and derivatives business in Asia. FinIQ and its EQ Connect platform offers connectivity to top market makers in the equity-linked space for products. LGT has subscribed to EQ Connect since 2018. Furthermore, the collaboration is set to further automate pre-trade suitability and order process, trade booking as well as post-trade information flow. LGT aims to achieve seamless integration with the FinIQ EQ Connect platform and its core banking system from Avaloq. In addition, FinIQ's FXD platform offers connectivity to market makers in the FX-linked space for cash FX, options, strategies and also structured products.
 
 In addition, FinIQ’s FXD platform offers connectivity to market makers in the FX-linked space for cash FX, options, strategies and also structured products.
@@ -29,6 +30,7 @@ The FinIQ solution automates instruments ranging from traditional products such 
   {
     id: 2,
     topTitle: 'Wealth Core',
+    popup: true,
     info: 'Mashreq partnered with FinIQ to enhance client experience with an integrated Wealth Management platform',
     description: `Liechtenstein-based private bank LGT and software provider FinIQ have worked together to automate and streamline its structured products and derivatives business in Asia. FinIQ and its EQ Connect platform offers connectivity to top market makers in the equity-linked space for products. LGT has subscribed to EQ Connect since 2018. Furthermore, the collaboration is set to further automate pre-trade suitability and order process, trade booking as well as post-trade information flow. LGT aims to achieve seamless integration with the FinIQ EQ Connect platform and its core banking system from Avaloq. In addition, FinIQ's FXD platform offers connectivity to market makers in the FX-linked space for cash FX, options, strategies and also structured products.
 
@@ -51,6 +53,7 @@ The FinIQ solution automates instruments ranging from traditional products such 
   {
     id: 3,
     topTitle: 'FX Derivatives',
+    popup: false,
     info: 'Nomura and FinIQ work together in FinIQ’s Market Connect Trading Platform',
     description: `Liechtenstein-based private bank LGT and software provider FinIQ have worked together to automate and streamline its structured products and derivatives business in Asia. FinIQ and its EQ Connect platform offers connectivity to top market makers in the equity-linked space for products. LGT has subscribed to EQ Connect since 2018. Furthermore, the collaboration is set to further automate pre-trade suitability and order process, trade booking as well as post-trade information flow. LGT aims to achieve seamless integration with the FinIQ EQ Connect platform and its core banking system from Avaloq. In addition, FinIQ's FXD platform offers connectivity to market makers in the FX-linked space for cash FX, options, strategies and also structured products.
 
@@ -74,6 +77,7 @@ The FinIQ solution automates instruments ranging from traditional products such 
   {
     id: 4,
     topTitle: 'Structured Products',
+    popup: false,
     info: 'FinIQ EQ Connect has been recognised by SRP as the best issuance platform',
     description: `Liechtenstein-based private bank LGT and software provider FinIQ have worked together to automate and streamline its structured products and derivatives business in Asia. FinIQ and its EQ Connect platform offers connectivity to top market makers in the equity-linked space for products. LGT has subscribed to EQ Connect since 2018. Furthermore, the collaboration is set to further automate pre-trade suitability and order process, trade booking as well as post-trade information flow. LGT aims to achieve seamless integration with the FinIQ EQ Connect platform and its core banking system from Avaloq. In addition, FinIQ's FXD platform offers connectivity to market makers in the FX-linked space for cash FX, options, strategies and also structured products.
 
@@ -97,6 +101,7 @@ The FinIQ solution automates instruments ranging from traditional products such 
   {
     id: 5,
     topTitle: 'Trading APIs',
+    popup: true,
     info: 'Four of the world’s top 10 banks built their pricing and order management flow using the FinIQ API',
     description: `Liechtenstein-based private bank LGT and software provider FinIQ have worked together to automate and streamline its structured products and derivatives business in Asia. FinIQ and its EQ Connect platform offers connectivity to top market makers in the equity-linked space for products. LGT has subscribed to EQ Connect since 2018. Furthermore, the collaboration is set to further automate pre-trade suitability and order process, trade booking as well as post-trade information flow. LGT aims to achieve seamless integration with the FinIQ EQ Connect platform and its core banking system from Avaloq. In addition, FinIQ's FXD platform offers connectivity to market makers in the FX-linked space for cash FX, options, strategies and also structured products.
 

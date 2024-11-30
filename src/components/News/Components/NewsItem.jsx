@@ -1,8 +1,24 @@
 import { useState } from 'react';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 
 const NewsItem = ({ data }) => {
   const [currentActiveYear, setCurrentActiveYear] = useState(2024);
+  const [currentActivePegin, setCurrentActivePegin] = useState(1);
+
+  const handelPreviousNews = () => {
+    currentActivePegin > 1 &&
+      (() => {
+        setCurrentActivePegin(currentActivePegin - 1);
+      })();
+  };
+
+  const handelNextNews = () => {
+    currentActivePegin < 4 &&
+      (() => {
+        setCurrentActivePegin(currentActivePegin + 1);
+      })();
+  };
 
   return (
     <div>
@@ -32,7 +48,7 @@ const NewsItem = ({ data }) => {
           <div key={item.id}>
             {item.year == currentActiveYear && (
               <div className="flex flex-col gap-y-6">
-                {item.newsItems.map((item) => (
+                {item.newsItems.slice(0, 5).map((item) => (
                   <div
                     data-aos="fade-bottom"
                     data-aos-delay="200"
@@ -61,12 +77,13 @@ const NewsItem = ({ data }) => {
                       {item.link && (
                         <div className="mt-5">
                           <Link
-                            to={data.link}
+                            to={item.link}
+                            target="_blank"
                             className="flex w-full max-w-fit md:w-auto border-bg-primary border-2 rounded-full pl-5 pr-3 py-0 sm:pl-8 sm:pr-1 sm:py-[3px] items-center gap-8 group hover:bg-bg-primary hover:border-transparent duration-300"
                           >
                             <div className="text-center w-[80%] md:w-auto md:text-left">
                               <h4 className="text-md md:text-base text-bg-primary font-semibold group-hover:text-white duration-300">
-                                Learn More
+                                Read More
                               </h4>
                             </div>
                             <svg
@@ -102,7 +119,74 @@ const NewsItem = ({ data }) => {
       </div>
 
       {/* News Items Paginate */}
-      <div className="w-full"></div>
+      <div
+        className="w-full mt-[50px] flex justify-center items-center gap-2 sm:gap-4"
+        style={{ userSelect: 'none' }}
+      >
+        <div
+          onClick={handelPreviousNews}
+          title="Previous News"
+          className="w-10 h-10 sm:w-11 sm:h-11 bg-bg-secondary rounded-lg flex justify-center items-center cursor-pointer group hover:bg-bg-primary duration-300"
+        >
+          <IoIosArrowBack className="text-black sm:text-xl group-hover:text-white duration-300" />
+        </div>
+
+        <div className="flex justify-center items-center gap-2 sm:gap-4">
+          {/* Previous Button */}
+          <div
+            onClick={() => setCurrentActivePegin(1)}
+            className={`w-10 h-10 sm:w-11 sm:h-11 rounded-lg flex justify-center items-center cursor-pointer group hover:text-white hover:bg-bg-primary duration-300 ${
+              currentActivePegin == 1
+                ? 'text-white bg-bg-primary'
+                : 'bg-bg-secondary'
+            }`}
+          >
+            <p>1</p>
+          </div>
+
+          <div
+            onClick={() => setCurrentActivePegin(2)}
+            className={`w-10 h-10 sm:w-11 sm:h-11 rounded-lg flex justify-center items-center cursor-pointer group hover:text-white hover:bg-bg-primary duration-300 ${
+              currentActivePegin == 2
+                ? 'text-white bg-bg-primary'
+                : 'bg-bg-secondary'
+            }`}
+          >
+            <p>2</p>
+          </div>
+
+          <div
+            onClick={() => setCurrentActivePegin(3)}
+            className={`w-10 h-10 sm:w-11 sm:h-11 rounded-lg flex justify-center items-center cursor-pointer group hover:text-white hover:bg-bg-primary duration-300 ${
+              currentActivePegin == 3
+                ? 'text-white bg-bg-primary'
+                : 'bg-bg-secondary'
+            }`}
+          >
+            <p>3</p>
+          </div>
+
+          <div
+            onClick={() => setCurrentActivePegin(4)}
+            className={`w-10 h-10 sm:w-11 sm:h-11 rounded-lg flex justify-center items-center cursor-pointer group hover:text-white hover:bg-bg-primary duration-300 ${
+              currentActivePegin == 4
+                ? 'text-white bg-bg-primary'
+                : 'bg-bg-secondary'
+            }`}
+          >
+            <p>4</p>
+          </div>
+        </div>
+
+        {/* Next Button */}
+        <div
+          onClick={handelNextNews}
+          title="Next News"
+          className="w-10 h-10 sm:w-11 sm:h-11 bg-bg-secondary rounded-lg flex justify-center items-center cursor-pointer group hover:bg-bg-primary duration-300"
+        >
+          <IoIosArrowForward className="text-black text-xl group-hover:text-white duration-300" />
+        </div>
+      </div>
     </div>
   );
 };

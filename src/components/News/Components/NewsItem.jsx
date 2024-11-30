@@ -5,19 +5,25 @@ import { Link } from 'react-router-dom';
 const NewsItem = ({ data }) => {
   const [currentActiveYear, setCurrentActiveYear] = useState(2024);
   const [currentActivePegin, setCurrentActivePegin] = useState(1);
+  const [prevBtnDisabled, setPrevBtnDisabled] = useState(true);
+  const [nextBtnDisabled, setNextBtnDisabled] = useState(false);
 
   const handelPreviousNews = () => {
-    currentActivePegin > 1 &&
-      (() => {
-        setCurrentActivePegin(currentActivePegin - 1);
-      })();
+    currentActivePegin > 1
+      ? (() => {
+          setNextBtnDisabled(false);
+          setCurrentActivePegin(currentActivePegin - 1);
+        })()
+      : setPrevBtnDisabled(true);
   };
 
   const handelNextNews = () => {
-    currentActivePegin < 4 &&
-      (() => {
-        setCurrentActivePegin(currentActivePegin + 1);
-      })();
+    currentActivePegin < 4
+      ? (() => {
+          setPrevBtnDisabled(false);
+          setCurrentActivePegin(currentActivePegin + 1);
+        })()
+      : setNextBtnDisabled(true);
   };
 
   return (
@@ -123,18 +129,29 @@ const NewsItem = ({ data }) => {
         className="w-full mt-[50px] flex justify-center items-center gap-2 sm:gap-4"
         style={{ userSelect: 'none' }}
       >
+        {/* Previous Button */}
         <div
           onClick={handelPreviousNews}
           title="Previous News"
-          className="w-10 h-10 sm:w-11 sm:h-11 bg-bg-secondary rounded-lg flex justify-center items-center cursor-pointer group hover:bg-bg-primary duration-300"
+          className={`w-10 h-10 sm:w-11 sm:h-11 bg-bg-secondary rounded-lg flex justify-center items-center cursor-pointer group hover:bg-bg-primary duration-300 ${
+            prevBtnDisabled &&
+            'opacity-50 cursor-not-allowed hover:bg-bg-secondary'
+          }`}
         >
-          <IoIosArrowBack className="text-black sm:text-xl group-hover:text-white duration-300" />
+          <IoIosArrowBack
+            className={`text-black sm:text-xl group-hover:text-white duration-300 ${
+              prevBtnDisabled && ' group-hover:text-black'
+            }`}
+          />
         </div>
 
         <div className="flex justify-center items-center gap-2 sm:gap-4">
-          {/* Previous Button */}
           <div
-            onClick={() => setCurrentActivePegin(1)}
+            onClick={() => (
+              setCurrentActivePegin(1),
+              setPrevBtnDisabled(false),
+              setNextBtnDisabled(false)
+            )}
             className={`w-10 h-10 sm:w-11 sm:h-11 rounded-lg flex justify-center items-center cursor-pointer group hover:text-white hover:bg-bg-primary duration-300 ${
               currentActivePegin == 1
                 ? 'text-white bg-bg-primary'
@@ -145,7 +162,11 @@ const NewsItem = ({ data }) => {
           </div>
 
           <div
-            onClick={() => setCurrentActivePegin(2)}
+            onClick={() => (
+              setCurrentActivePegin(2),
+              setPrevBtnDisabled(false),
+              setNextBtnDisabled(false)
+            )}
             className={`w-10 h-10 sm:w-11 sm:h-11 rounded-lg flex justify-center items-center cursor-pointer group hover:text-white hover:bg-bg-primary duration-300 ${
               currentActivePegin == 2
                 ? 'text-white bg-bg-primary'
@@ -156,7 +177,11 @@ const NewsItem = ({ data }) => {
           </div>
 
           <div
-            onClick={() => setCurrentActivePegin(3)}
+            onClick={() => (
+              setCurrentActivePegin(3),
+              setPrevBtnDisabled(false),
+              setNextBtnDisabled(false)
+            )}
             className={`w-10 h-10 sm:w-11 sm:h-11 rounded-lg flex justify-center items-center cursor-pointer group hover:text-white hover:bg-bg-primary duration-300 ${
               currentActivePegin == 3
                 ? 'text-white bg-bg-primary'
@@ -167,7 +192,11 @@ const NewsItem = ({ data }) => {
           </div>
 
           <div
-            onClick={() => setCurrentActivePegin(4)}
+            onClick={() => (
+              setCurrentActivePegin(4),
+              setPrevBtnDisabled(false),
+              setNextBtnDisabled(false)
+            )}
             className={`w-10 h-10 sm:w-11 sm:h-11 rounded-lg flex justify-center items-center cursor-pointer group hover:text-white hover:bg-bg-primary duration-300 ${
               currentActivePegin == 4
                 ? 'text-white bg-bg-primary'
@@ -182,9 +211,16 @@ const NewsItem = ({ data }) => {
         <div
           onClick={handelNextNews}
           title="Next News"
-          className="w-10 h-10 sm:w-11 sm:h-11 bg-bg-secondary rounded-lg flex justify-center items-center cursor-pointer group hover:bg-bg-primary duration-300"
+          className={`w-10 h-10 sm:w-11 sm:h-11 bg-bg-secondary rounded-lg flex justify-center items-center cursor-pointer group hover:bg-bg-primary duration-300 ${
+            nextBtnDisabled &&
+            'opacity-50 cursor-not-allowed hover:bg-bg-secondary'
+          }`}
         >
-          <IoIosArrowForward className="text-black text-xl group-hover:text-white duration-300" />
+          <IoIosArrowForward
+            className={`text-black text-xl group-hover:text-white duration-300 ${
+              nextBtnDisabled && 'group-hover:text-black'
+            }`}
+          />
         </div>
       </div>
     </div>

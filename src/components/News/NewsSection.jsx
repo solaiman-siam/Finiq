@@ -446,7 +446,7 @@ const NewsSection = () => {
   return (
     <section
       id="news"
-      className="bg-white pt-[50px] sm:pt-[100px] pb-[61px] relative z-[1] px-5 xxl:px-0"
+      className="bg-white pt-[50px] sm:pt-[100px] sm:pb-[61px] relative z-[1] px-5 xxl:px-0"
     >
       <Container>
         {/* section title  */}

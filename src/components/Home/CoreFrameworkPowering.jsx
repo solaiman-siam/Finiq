@@ -5,7 +5,7 @@ function CoreFrameworkPowering() {
   return (
     <div
       id="coreFramework"
-      className="w-full h-full bg-bg-secondary py-[50px] sm:py-[70px] md:py-24 px-5 xl:px-0"
+      className="w-full h-full bg-bg-secondary py-[50px] sm:py-[70px] md:py-24 px-5 xxl:px-0"
     >
       <Container>
         <div className="">

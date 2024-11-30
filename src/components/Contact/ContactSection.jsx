@@ -14,7 +14,7 @@ const ContactSection = () => {
     <section className="">
       <Container>
         {/* section title  */}
-        <div className="max-w-full lg:max-w-[60%] mb-[42px] px-5 xl:px-0">
+        <div className="max-w-full lg:max-w-[60%] mb-[42px] px-5 xxl:px-0">
           <h3
             data-aos="fade-left"
             data-aos-delay="500"
@@ -40,11 +40,11 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="flex flex-col lg:flex-row h-full lg:gap-5">
+        <div className="flex flex-col lg:flex-row h-full gap-5 px-5 xxl:px-0">
           <div
             data-aos="zoom-in"
             data-aos-delay="500"
-            className="w-full lg:w-[60%] h-full bg-white p-[35px] lg:rounded-[10px]"
+            className="w-full lg:w-[60%] h-full bg-white p-[35px] rounded-[10px]"
           >
             {/* Type Selector */}
             <div className="w-full flex flex-wrap justify-between gap-y-3 items-center mb-10">

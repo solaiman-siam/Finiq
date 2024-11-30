@@ -10,7 +10,7 @@ function ExpowerOthers() {
   return (
     <div>
       <Container>
-        <div className="pt-16 sm:pt-24 px-5 xl:px-0">
+        <div className="pt-16 sm:pt-24 px-5 xxl:px-0">
           <div
             data-aos="zoom-in"
             className="flex w-full items-center flex-col  justify-center gap-4 pb-12"

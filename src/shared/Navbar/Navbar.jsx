@@ -13,7 +13,7 @@ function Navbar() {
       className="absolute top-0 left-0 w-full mx-auto z-50"
     >
       <Container>
-        <div className="flex items-center mx-5 mx:px-0 lg:items-top border-b border-[#DCDCDC] justify-between">
+        <div className="flex items-center mx-5 xxl:mx-0 mx:px-0 lg:items-top border-b border-[#DCDCDC] justify-between">
           <div className="py-6">
             <Link to={'/'}>
               <img className="w-[100px] lg:w-40" src="/logo.png" alt="" />

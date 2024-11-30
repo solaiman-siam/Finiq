@@ -79,12 +79,12 @@ function Footer() {
                     Solutions
                   </h4>
                 </Link>
-                <Link to={'/showcases'}>
+                <Link to={'#news'}>
                   <h4 className="text-lg hover:text-bg-primary duration-300">
                     News
                   </h4>
                 </Link>
-                <Link to={'/showcases'}>
+                <Link to={'#locations'}>
                   <h4 className="text-lg hover:text-bg-primary duration-300">
                     Locations
                   </h4>

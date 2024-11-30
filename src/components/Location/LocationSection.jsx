@@ -280,7 +280,7 @@ const LocationSection = () => {
   return (
     <section
       id="locations"
-      className="py-[50px] sm:py-[100px] bg-bg-secondary relative z-[1] px-5 xl:px-0"
+      className="py-[50px] sm:py-[100px] bg-bg-secondary relative z-[1] px-5 xxl:px-0"
     >
       <Container>
         {/* section title  */}

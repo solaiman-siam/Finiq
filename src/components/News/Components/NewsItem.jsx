@@ -1,29 +1,25 @@
-import { useState } from 'react';
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const NewsItem = ({ data }) => {
   const [currentActiveYear, setCurrentActiveYear] = useState(2024);
-  const [currentActivePegin, setCurrentActivePegin] = useState(1);
-  const [prevBtnDisabled, setPrevBtnDisabled] = useState(true);
-  const [nextBtnDisabled, setNextBtnDisabled] = useState(false);
+  const [activePage, setActivePage] = useState(1);
 
-  const handelPreviousNews = () => {
-    currentActivePegin > 1
-      ? (() => {
-          setNextBtnDisabled(false);
-          setCurrentActivePegin(currentActivePegin - 1);
-        })()
-      : setPrevBtnDisabled(true);
+  console.log(activePage);
+
+  const pages = [1, 2, 3, 4];
+
+  const handleNext = () => {
+    if (pages.length > activePage) {
+      setActivePage((prevState) => prevState + 1);
+    }
   };
 
-  const handelNextNews = () => {
-    currentActivePegin < 4
-      ? (() => {
-          setPrevBtnDisabled(false);
-          setCurrentActivePegin(currentActivePegin + 1);
-        })()
-      : setNextBtnDisabled(true);
+  const handlePrev = () => {
+    if (activePage > 1) {
+      setActivePage((prevState) => prevState - 1);
+    }
   };
 
   return (
@@ -38,8 +34,8 @@ const NewsItem = ({ data }) => {
             onClick={() => setCurrentActiveYear(item.year)}
             className={`text-black text-[13px] sm:text-base capitalize px-2 sm:px-4 ${
               item.year == currentActiveYear
-                ? 'opacity-100 font-bold'
-                : 'opacity-50 font-normal'
+                ? "opacity-100 font-bold"
+                : "opacity-50 font-normal"
             } cursor-pointer hover:opacity-100 duration-300 relative after:absolute after:bottom-[-15px] after:left-0 after:w-full after:h-[1px] after:bg-bg-primary after:content-[''] first:pl-0 last:pr-0`}
             key={item.id}
           >
@@ -127,99 +123,49 @@ const NewsItem = ({ data }) => {
       {/* News Items Paginate */}
       <div
         className="w-full mt-[50px] flex justify-center items-center gap-2 sm:gap-4"
-        style={{ userSelect: 'none' }}
+        style={{ userSelect: "none" }}
       >
         {/* Previous Button */}
         <div
-          onClick={handelPreviousNews}
+          onClick={handlePrev}
           title="Previous News"
-          className={`w-10 h-10 sm:w-11 sm:h-11 bg-bg-secondary rounded-lg flex justify-center items-center cursor-pointer group hover:bg-bg-primary duration-300 ${
-            prevBtnDisabled &&
-            'opacity-50 cursor-not-allowed hover:bg-bg-secondary'
-          }`}
+          className={`w-10 h-10 sm:w-11 sm:h-11  rounded-lg flex justify-center items-center  group  duration-300 ${
+            activePage === 1
+              ? "bg-bg-secondary/50 cursor-not-allowed"
+              : "bg-bg-secondary hover:bg-bg-primary cursor-pointer"
+          } `}
         >
           <IoIosArrowBack
-            className={`text-black sm:text-xl group-hover:text-white duration-300 ${
-              prevBtnDisabled && ' group-hover:text-black'
-            }`}
+            className={`sm:text-xl  duration-300 ${activePage === 1 ? 'group-hover:text-white text-white' : 'group-hover:text-white text-black'}`}
           />
         </div>
 
         <div className="flex justify-center items-center gap-2 sm:gap-4">
-          <div
-            onClick={() => (
-              setCurrentActivePegin(1),
-              setPrevBtnDisabled(false),
-              setNextBtnDisabled(false)
-            )}
-            className={`w-10 h-10 sm:w-11 sm:h-11 rounded-lg flex justify-center items-center cursor-pointer group hover:text-white hover:bg-bg-primary duration-300 ${
-              currentActivePegin == 1
-                ? 'text-white bg-bg-primary'
-                : 'bg-bg-secondary'
-            }`}
-          >
-            <p>1</p>
-          </div>
-
-          <div
-            onClick={() => (
-              setCurrentActivePegin(2),
-              setPrevBtnDisabled(false),
-              setNextBtnDisabled(false)
-            )}
-            className={`w-10 h-10 sm:w-11 sm:h-11 rounded-lg flex justify-center items-center cursor-pointer group hover:text-white hover:bg-bg-primary duration-300 ${
-              currentActivePegin == 2
-                ? 'text-white bg-bg-primary'
-                : 'bg-bg-secondary'
-            }`}
-          >
-            <p>2</p>
-          </div>
-
-          <div
-            onClick={() => (
-              setCurrentActivePegin(3),
-              setPrevBtnDisabled(false),
-              setNextBtnDisabled(false)
-            )}
-            className={`w-10 h-10 sm:w-11 sm:h-11 rounded-lg flex justify-center items-center cursor-pointer group hover:text-white hover:bg-bg-primary duration-300 ${
-              currentActivePegin == 3
-                ? 'text-white bg-bg-primary'
-                : 'bg-bg-secondary'
-            }`}
-          >
-            <p>3</p>
-          </div>
-
-          <div
-            onClick={() => (
-              setCurrentActivePegin(4),
-              setPrevBtnDisabled(false),
-              setNextBtnDisabled(false)
-            )}
-            className={`w-10 h-10 sm:w-11 sm:h-11 rounded-lg flex justify-center items-center cursor-pointer group hover:text-white hover:bg-bg-primary duration-300 ${
-              currentActivePegin == 4
-                ? 'text-white bg-bg-primary'
-                : 'bg-bg-secondary'
-            }`}
-          >
-            <p>4</p>
-          </div>
+          {pages.map((item) => (
+            <div
+            onClick={() => setActivePage(item)}
+              className={`w-10 h-10 ${
+                activePage === item ? "bg-bg-primary text-white" : ""
+              } sm:w-11 sm:h-11 rounded-lg flex justify-center items-center cursor-pointer group hover:text-white hover:bg-bg-primary duration-300`}
+              key={item}
+            >
+              <h4>{item}</h4>
+            </div>
+          ))}
         </div>
 
         {/* Next Button */}
         <div
-          onClick={handelNextNews}
+          onClick={handleNext}
           title="Next News"
-          className={`w-10 h-10 sm:w-11 sm:h-11 bg-bg-secondary rounded-lg flex justify-center items-center cursor-pointer group hover:bg-bg-primary duration-300 ${
-            nextBtnDisabled &&
-            'opacity-50 cursor-not-allowed hover:bg-bg-secondary'
+          className={`w-10 h-10 sm:w-11 sm:h-11  rounded-lg flex justify-center items-center  group duration-300 ${
+            pages.length === activePage
+              ? "cursor-not-allowed bg-bg-secondary/45 disabled disabled:cursor-not-allowed"
+              : "cursor-pointer bg-bg-secondary hover:bg-bg-primary "
           }`}
         >
           <IoIosArrowForward
-            className={`text-black text-xl group-hover:text-white duration-300 ${
-              nextBtnDisabled && 'group-hover:text-black'
-            }`}
+            className={`sm:text-xl  duration-300 ${pages.length === activePage ? 'group-hover:text-white text-white' : 'group-hover:text-white text-black'}`}
           />
         </div>
       </div>

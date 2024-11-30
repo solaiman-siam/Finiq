@@ -1,17 +1,19 @@
-import { useState } from 'react';
-import { FaXmark } from 'react-icons/fa6';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { FaXmark } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const ShowcaseThrice = ({ data }) => {
   const [activeArticle, setActiveArticle] = useState(false);
 
   return (
     <div className="w-full sm:w-[32%] flex flex-col bg-white p-5 rounded-[10px]">
-      <div className="w-full h-[270px] group overflow-hidden rounded-[10px]">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="500"
+        className="w-full h-[270px] group overflow-hidden rounded-[10px]"
+      >
         <img
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="500"
           src={data.imgUrl}
           alt="Showcase Item Image"
           className="w-full h-full rounded-[10px] object-cover group-hover:scale-105 duration-300"

@@ -145,8 +145,8 @@ const NewsItem = ({ data }) => {
             <div
             onClick={() => setActivePage(item)}
               className={`w-10 h-10 ${
-                activePage === item ? "bg-bg-primary text-white" : ""
-              } sm:w-11 sm:h-11 rounded-lg flex justify-center items-center cursor-pointer group hover:text-white hover:bg-bg-primary duration-300`}
+                activePage === item ? "bg-bg-primary text-white" : "bg-bg-secondary"
+              } sm:w-11 sm:h-11 rounded-lg flex justify-center items-center cursor-pointer group hover:text-white hover:bg-bg-primary  duration-300`}
               key={item}
             >
               <h4>{item}</h4>

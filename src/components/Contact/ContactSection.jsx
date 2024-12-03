@@ -3,12 +3,19 @@ import { Link } from 'react-router-dom';
 import Container from '../Container';
 
 const ContactSection = () => {
-  const [active, setActive] = useState('demo');
+  const [activeTab, setActiveTab] = useState(0)
 
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(event.target);
   };
+
+  const tabArr = [
+    "demo Request",
+    "Careers",
+    "Partnerships",
+    "General"
+  ]
 
   return (
     <section className="">
@@ -48,58 +55,15 @@ const ContactSection = () => {
           >
             {/* Type Selector */}
             <div className="w-full flex flex-wrap justify-between gap-y-3 items-center mb-10">
-              <a
-                data-aos="fade-left"
-                data-aos-delay="1200"
+              {
+                tabArr.map((tab, index) => <Link key={index} > <h4 
+               
                 href="mailto:meeting@finiq.com"
-                onClick={() => setActive('demo')}
-                className={`w-[48%] sm:w-[28%] xl:w-auto px-[20px] py-[10px] border-2 border-bg-primary rounded-full text-xs lg:text-xs xl:text-[22px] font-bold capitalize cursor-pointer hover:bg-bg-primary hover:text-white duration-300 ${
-                  active == 'demo'
-                    ? 'bg-bg-primary text-white'
-                    : 'bg-transparent text-bg-primary'
-                }`}
-              >
-                demo Request
-              </a>
-              <a
-                data-aos="fade-left"
-                data-aos-delay="1500"
-                href="mailto:jobs@finiq.com"
-                onClick={() => setActive('careers')}
-                className={`w-[48%] sm:w-[22%] xl:w-auto px-[20px] py-[10px] border-2 border-bg-primary rounded-full text-xs lg:text-xs xl:text-[22px] font-bold capitalize cursor-pointer hover:bg-bg-primary hover:text-white duration-300 ${
-                  active == 'careers'
-                    ? 'bg-bg-primary text-white'
-                    : 'bg-transparent text-bg-primary'
-                }`}
-              >
-                Careers
-              </a>
-              <a
-                data-aos="fade-left"
-                data-aos-delay="1700"
-                href="mailto:meeting@finiq.com"
-                onClick={() => setActive('partnerships')}
-                className={`w-[48%] sm:w-[24%] xl:w-auto px-[20px] py-[10px] border-2 border-bg-primary rounded-full text-xs lg:text-xs xl:text-[22px] font-bold capitalize cursor-pointer hover:bg-bg-primary hover:text-white duration-300 ${
-                  active == 'partnerships'
-                    ? 'bg-bg-primary text-white'
-                    : 'bg-transparent text-bg-primary'
-                }`}
-              >
-                Partnerships
-              </a>
-              <a
-                data-aos="fade-left"
-                data-aos-delay="2000"
-                href="mailto:info@finiq.com"
-                onClick={() => setActive('general')}
-                className={`w-[48%] sm:w-[22%] xl:w-auto px-[20px] py-[10px] border-2 border-bg-primary rounded-full text-xs lg:text-xs xl:text-[22px] font-bold capitalize cursor-pointer hover:bg-bg-primary hover:text-white duration-300 ${
-                  active == 'general'
-                    ? 'bg-bg-primary text-white'
-                    : 'bg-transparent text-bg-primary'
-                }`}
-              >
-                General
-              </a>
+
+                onClick={() => setActiveTab(index)}
+                className={`w-[48%] sm:w-[28%] xl:w-auto px-[20px] py-[10px]  rounded-full text-xs lg:text-xs xl:text-[22px] font-bold capitalize cursor-pointer   duration-300  ${activeTab === index ? "bg-bg-primary text-white border-bg-primary border-2" : "border-bg-primary  text-bg-primary hover:bg-bg-primary border-2 hover:text-white"}`}> {tab} </h4> </Link>)
+              }
+
             </div>
 
             {/* Form */}

@@ -27,7 +27,7 @@ const NewsItem = ({ data }) => {
       {/* News Timeline */}
       <div
         data-aos="fade-left"
-        className="flex justify-center sm:justify-start mb-[15px]"
+        className="flex flex-row-reverse justify-center sm:justify-end mb-[15px]"
       >
         {data.map((item) => (
           <h6

@@ -52,7 +52,7 @@ function Footer() {
                     Overview
                   </h4>
                 </Link>
-                <Link to="#coreFramework">
+                <Link to="/#coreFramework">
                   <h4 className="text-lg hover:text-bg-primary duration-300">
                     Core Framework
                   </h4>
@@ -62,7 +62,7 @@ function Footer() {
                     Our Partners
                   </h4>
                 </Link>
-                <Link to={'#about'}>
+                <Link to={'/#about'}>
                   <h4 className="text-lg hover:text-bg-primary duration-300">
                     About Us
                   </h4>

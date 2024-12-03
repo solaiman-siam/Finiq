@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Container from '../Container';
 import LocationBigItem from './Components/LocationBigItem';
 import LocationSmallItem from './Components/LocationSmallItem';
@@ -277,6 +279,17 @@ Office No - 235, 5th Floor, Novel MSR Building, Marathahalli, Bengaluru, Karnata
 ];
 
 const LocationSection = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
+
   return (
     <section
       id="locations"

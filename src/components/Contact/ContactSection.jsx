@@ -202,7 +202,7 @@ const ContactSection = () => {
                 are well positioned to react to ever-changing market conditions.
               </p>
               <Link
-                to={'/showcases'}
+                to={'/showcases#locations'}
                 className="text-bg-primary text-[15px] font-bold mt-[50px] inline-block"
               >
                 - DISCOVER OUR LOCATIONS

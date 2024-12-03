@@ -57,7 +57,7 @@ function Footer() {
                     Core Framework
                   </h4>
                 </Link>
-                <Link to={'#partners'}>
+                <Link to={'/showcases#partners'}>
                   <h4 className="text-lg hover:text-bg-primary duration-300">
                     Our Partners
                   </h4>
@@ -79,12 +79,12 @@ function Footer() {
                     Solutions
                   </h4>
                 </Link>
-                <Link to={'#news'}>
+                <Link to={'/showcases#news'}>
                   <h4 className="text-lg hover:text-bg-primary duration-300">
                     News
                   </h4>
                 </Link>
-                <Link to={'#locations'}>
+                <Link to={'/showcases#locations'}>
                   <h4 className="text-lg hover:text-bg-primary duration-300">
                     Locations
                   </h4>

@@ -56,20 +56,18 @@ const ContactSection = () => {
             {/* Type Selector */}
             <div className="w-full flex flex-wrap justify-between gap-y-3 items-center mb-10">
               {
-                tabArr.map((tab, index) => <Link key={index} > <h4 
+                tabArr.map((tab, index) => <Link data-aos="zoom-in"
+                data-aos-delay="1000" key={index} > <h4 
                
                 href="mailto:meeting@finiq.com"
-
                 onClick={() => setActiveTab(index)}
-                className={`w-[48%] sm:w-[28%] xl:w-auto px-[20px] py-[10px]  rounded-full text-xs lg:text-xs xl:text-[22px] font-bold capitalize cursor-pointer   duration-300  ${activeTab === index ? "bg-bg-primary text-white border-bg-primary border-2" : "border-bg-primary  text-bg-primary hover:bg-bg-primary border-2 hover:text-white"}`}> {tab} </h4> </Link>)
+                className={`w-full  xl:w-auto px-[20px] py-[10px]  rounded-full text-xs lg:text-xs xl:text-[22px] font-bold capitalize cursor-pointer   duration-300  ${activeTab === index ? "bg-bg-primary text-white border-bg-primary border-2" : "border-bg-primary  text-bg-primary hover:bg-bg-primary border-2 hover:text-white"}`}> {tab} </h4> </Link>)
               }
-
             </div>
-
             {/* Form */}
             <form
               data-aos="fade-top"
-              data-aos-delay="2000"
+              data-aos-delay="1000"
               onSubmit={handleSubmit}
               className="w-full h-full flex flex-col gap-y-8 lg:gap-y-[52px]"
             >

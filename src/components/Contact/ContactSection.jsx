@@ -41,7 +41,7 @@ const ContactSection = () => {
             data-aos-delay="1000"
             className="text-paraColor text-base lg:text-lg font-medium leading-[150%]"
           >
-            Have a question, comment, suggestion, or just want to get in touch?
+            Have a questions, comments, suggestions, or just want to get in touch?
             We;d love to hear from you. Fill out the form and someone will get
             back to you asap.
           </p>
